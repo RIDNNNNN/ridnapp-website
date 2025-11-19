@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - RIDN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #FF4458;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FF4458;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #FF4458;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .important {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .contact-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #FF4458;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🏍️ RIDN</div>
+            <h1>Politique de Confidentialité</h1>
+            <p class="last-updated">Dernière mise à jour : 19 novembre 2025</p>
+        </div>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                Bienvenue sur RIDN, l'application de rencontre dédiée aux passionnés de moto. La présente Politique de Confidentialité décrit comment ONEVRA (ci-après "nous", "notre" ou "RIDN") collecte, utilise, protège et partage vos données personnelles dans le cadre de l'utilisation de notre application mobile.
+            </p>
+            <p>
+                Conformément au Règlement Général sur la Protection des Données (RGPD - Règlement UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, nous nous engageons à protéger votre vie privée et vos données personnelles.
+            </p>
+            <div class="important">
+                <strong>⚠️ Important :</strong> En utilisant RIDN, vous acceptez les pratiques décrites dans cette Politique de Confidentialité. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre application.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Responsable du Traitement</h2>
+            <div class="contact-box">
+                <p><strong>ONEVRA</strong><br>
+                France</p>
+                <p>Email : <a href="mailto:contact@ridnapp.com">contact@ridnapp.com</a></p>
+                <p>Support : <a href="mailto:support@ridnapp.com">support@ridnapp.com</a></p>
+                <p>Protection des données : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Données Collectées</h2>
+            
+            <h3>3.1. Données d'inscription</h3>
+            <p>Lors de la création de votre compte, nous collectons :</p>
+            <ul>
+                <li>Nom et prénom</li>
+                <li>Adresse e-mail</li>
+                <li>Date de naissance (pour vérifier que vous avez plus de 18 ans)</li>
+                <li>Sexe</li>
+                <li>Numéro de téléphone (optionnel, pour la vérification du compte)</li>
+            </ul>
+
+            <h3>3.2. Données de profil</h3>
+            <p>Pour créer votre profil de rider, nous collectons :</p>
+            <ul>
+                <li>Photos de profil et photos de galerie</li>
+                <li>Biographie et description personnelle</li>
+                <li>Pratiques moto (Enduro, Trial, Route, Piste, Supermoto, Bikelife, etc.)</li>
+                <li>Marque et modèle de moto (optionnel)</li>
+                <li>Ville de résidence</li>
+                <li>Rayon de recherche préféré</li>
+            </ul>
+
+            <h3>3.3. Données de localisation</h3>
+            <p>Avec votre consentement explicite, nous collectons :</p>
+            <ul>
+                <li>Localisation approximative (ville) pour trouver des riders à proximité</li>
+                <li>Nous ne collectons PAS votre position GPS exacte en temps réel</li>
+            </ul>
+
+            <h3>3.4. Données d'utilisation</h3>
+            <p>Lors de l'utilisation de l'application, nous collectons :</p>
+            <ul>
+                <li>Profils que vous aimez, passez ou superlikez</li>
+                <li>Matchs établis</li>
+                <li>Messages échangés avec vos matchs</li>
+                <li>Date et heure de vos connexions</li>
+                <li>Actions effectuées dans l'application (swipes, likes, etc.)</li>
+            </ul>
+
+            <h3>3.5. Données techniques</h3>
+            <ul>
+                <li>Type d'appareil (iOS/Android)</li>
+                <li>Système d'exploitation et version</li>
+                <li>Identifiant unique de l'appareil</li>
+                <li>Adresse IP</li>
+                <li>Données de performance et de bugs (via Firebase Crashlytics)</li>
+            </ul>
+
+            <h3>3.6. Données d'abonnement</h3>
+            <p>Si vous souscrivez à RIDN Boost :</p>
+            <ul>
+                <li>Historique d'abonnement</li>
+                <li>Méthode de paiement (gérée par Apple/Google, nous ne stockons PAS vos informations bancaires)</li>
+                <li>Statut d'abonnement (actif, annulé, expiré)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Base Légale et Finalités du Traitement</h2>
+            
+            <h3>4.1. Exécution du contrat</h3>
+            <p>Nous traitons vos données pour :</p>
+            <ul>
+                <li>Créer et gérer votre compte utilisateur</li>
+                <li>Vous permettre de créer un profil</li>
+                <li>Vous proposer des profils compatibles</li>
+                <li>Gérer les matchs et la messagerie</li>
+                <li>Fournir le support client</li>
+            </ul>
+
+            <h3>4.2. Consentement</h3>
+            <p>Avec votre consentement, nous utilisons vos données pour :</p>
+            <ul>
+                <li>Accéder à votre localisation approximative</li>
+                <li>Envoyer des notifications push</li>
+                <li>Vous envoyer des communications marketing (vous pouvez vous désabonner à tout moment)</li>
+            </ul>
+
+            <h3>4.3. Intérêt légitime</h3>
+            <p>Nous traitons vos données pour :</p>
+            <ul>
+                <li>Améliorer nos services et développer de nouvelles fonctionnalités</li>
+                <li>Analyser l'utilisation de l'application (analytics)</li>
+                <li>Détecter et prévenir la fraude</li>
+                <li>Assurer la sécurité de la plateforme</li>
+            </ul>
+
+            <h3>4.4. Obligation légale</h3>
+            <p>Nous conservons certaines données pour :</p>
+            <ul>
+                <li>Respecter nos obligations légales</li>
+                <li>Répondre aux demandes des autorités compétentes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Partage des Données</h2>
+            
+            <h3>5.1. Nous NE vendons JAMAIS vos données personnelles</h3>
+            <p>Vos données personnelles ne sont jamais vendues à des tiers.</p>
+
+            <h3>5.2. Partage avec d'autres utilisateurs</h3>
+            <p>Votre profil (nom, âge, photos, bio, pratiques moto, ville) est visible par les autres utilisateurs de RIDN dans le cadre de la fonctionnalité de matching.</p>
+
+            <h3>5.3. Prestataires de services</h3>
+            <p>Nous partageons vos données avec des prestataires de confiance :</p>
+            <ul>
+                <li><strong>Firebase (Google)</strong> : Hébergement, authentification, base de données, analytics</li>
+                <li><strong>RevenueCat</strong> : Gestion des abonnements</li>
+                <li><strong>Stripe</strong> : Traitement des paiements (ne reçoit PAS vos données personnelles de profil)</li>
+                <li><strong>Apple/Google</strong> : Distribution de l'application et gestion des paiements</li>
+            </ul>
+            <p>Ces prestataires sont contractuellement tenus de protéger vos données et ne peuvent les utiliser que pour les services fournis.</p>
+
+            <h3>5.4. Transferts internationaux</h3>
+            <p>Certains de nos prestataires (Firebase, RevenueCat) peuvent transférer vos données hors de l'Union Européenne. Ces transferts sont encadrés par :</p>
+            <ul>
+                <li>Les Clauses Contractuelles Types de la Commission Européenne</li>
+                <li>Le Bouclier de Protection des Données UE-États-Unis (Data Privacy Framework)</li>
+            </ul>
+
+            <h3>5.5. Obligations légales</h3>
+            <p>Nous pouvons divulguer vos données si requis par la loi ou dans le cadre de :</p>
+            <ul>
+                <li>Procédures judiciaires</li>
+                <li>Demandes des autorités compétentes</li>
+                <li>Protection de nos droits légaux</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Durée de Conservation</h2>
+            <p>Nous conservons vos données personnelles uniquement le temps nécessaire aux finalités pour lesquelles elles ont été collectées :</p>
+            <ul>
+                <li><strong>Compte actif :</strong> Tant que votre compte est actif</li>
+                <li><strong>Après suppression du compte :</strong> 30 jours (pour permettre une restauration en cas d'erreur), puis suppression définitive</li>
+                <li><strong>Messages :</strong> Supprimés immédiatement si vous supprimez votre compte ou un match</li>
+                <li><strong>Données d'analytics :</strong> 26 mois maximum</li>
+                <li><strong>Données légales :</strong> Durées légales applicables (comptabilité : 10 ans)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Sécurité des Données</h2>
+            <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données :</p>
+            <ul>
+                <li>Chiffrement des données en transit (HTTPS/TLS)</li>
+                <li>Chiffrement des données au repos (Firebase Security)</li>
+                <li>Authentification sécurisée (Firebase Auth)</li>
+                <li>Contrôle d'accès strict aux données</li>
+                <li>Surveillance et détection des incidents de sécurité</li>
+                <li>Sauvegardes régulières</li>
+            </ul>
+            <p>Cependant, aucune méthode de transmission ou de stockage n'est 100% sécurisée. En cas de violation de données, nous vous en informerons conformément au RGPD.</p>
+        </section>
+
+        <section>
+            <h2>8. Vos Droits (RGPD)</h2>
+            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+
+            <h3>8.1. Droit d'accès</h3>
+            <p>Vous pouvez demander une copie de toutes les données personnelles que nous détenons sur vous.</p>
+
+            <h3>8.2. Droit de rectification</h3>
+            <p>Vous pouvez corriger vos données inexactes ou incomplètes directement dans l'application (Paramètres > Modifier mon profil).</p>
+
+            <h3>8.3. Droit à l'effacement ("droit à l'oubli")</h3>
+            <p>Vous pouvez supprimer votre compte et toutes vos données à tout moment (Paramètres > Supprimer mon compte).</p>
+
+            <h3>8.4. Droit à la limitation du traitement</h3>
+            <p>Vous pouvez demander la limitation du traitement de vos données dans certaines circonstances.</p>
+
+            <h3>8.5. Droit à la portabilité</h3>
+            <p>Vous pouvez demander à recevoir vos données dans un format structuré et lisible par machine.</p>
+
+            <h3>8.6. Droit d'opposition</h3>
+            <p>Vous pouvez vous opposer au traitement de vos données à des fins de marketing direct.</p>
+
+            <h3>8.7. Droit de retirer votre consentement</h3>
+            <p>Vous pouvez retirer votre consentement à tout moment (ex : désactiver la localisation, désactiver les notifications).</p>
+
+            <h3>8.8. Exercice de vos droits</h3>
+            <p>Pour exercer vos droits, contactez-nous à : <a href="mailto:contact@ridnapp.com">contact@ridnapp.com</a></p>
+            <p>Nous répondrons à votre demande dans un délai d'un mois maximum.</p>
+
+            <h3>8.9. Droit de réclamation</h3>
+            <p>Vous avez le droit de déposer une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) :</p>
+            <div class="contact-box">
+                <p><strong>CNIL</strong><br>
+                3 Place de Fontenoy<br>
+                TSA 80715<br>
+                75334 Paris Cedex 07<br>
+                France</p>
+                <p>Site web : <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>9. Cookies et Technologies Similaires</h2>
+            <p>RIDN est une application mobile native et n'utilise pas de cookies au sens traditionnel. Cependant, nous utilisons des technologies similaires :</p>
+            <ul>
+                <li><strong>Identifiants d'appareil :</strong> Pour identifier votre appareil de manière unique</li>
+                <li><strong>Stockage local :</strong> Pour enregistrer vos préférences et améliorer les performances</li>
+                <li><strong>Firebase Analytics :</strong> Pour analyser l'utilisation de l'application</li>
+            </ul>
+            <p>Vous pouvez gérer ces paramètres dans les réglages de votre appareil.</p>
+        </section>
+
+        <section>
+            <h2>10. Protection des Mineurs</h2>
+            <p>RIDN est strictement réservé aux personnes âgées de 18 ans et plus. Nous ne collectons pas sciemment de données personnelles de mineurs.</p>
+            <p>Si nous apprenons qu'un mineur a créé un compte, nous le supprimerons immédiatement.</p>
+            <p>Si vous pensez qu'un mineur utilise RIDN, contactez-nous à : <a href="mailto:contact@ridnapp.com">contact@ridnapp.com</a></p>
+        </section>
+
+        <section>
+            <h2>11. Modifications de la Politique de Confidentialité</h2>
+            <p>Nous pouvons modifier cette Politique de Confidentialité de temps en temps. En cas de modification substantielle, nous vous en informerons par :</p>
+            <ul>
+                <li>Notification dans l'application</li>
+                <li>Email à l'adresse associée à votre compte</li>
+            </ul>
+            <p>La date de "Dernière mise à jour" en haut de ce document indique la dernière révision.</p>
+            <p>Nous vous encourageons à consulter régulièrement cette page pour rester informé de nos pratiques de confidentialité.</p>
+        </section>
+
+        <section>
+            <h2>12. Contact et Délégué à la Protection des Données</h2>
+            <p>Pour toute question concernant cette Politique de Confidentialité ou l'exercice de vos droits, contactez-nous :</p>
+            <div class="contact-box">
+                <p><strong>Par email :</strong></p>
+                <ul>
+                    <li>Questions générales : <a href="mailto:contact@ridnapp.com">contact@ridnapp.com</a></li>
+                    <li>Support technique : <a href="mailto:contact@ridnapp.com">contact@ridnapp.com</a></li>
+                    <li>Protection des données : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></li>
+                </ul>
+                <p><strong>Par courrier :</strong></p>
+                <p>ONEVRA - Service Prot
