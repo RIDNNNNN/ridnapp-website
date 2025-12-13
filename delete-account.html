@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte RIDN - Suppression de compte et données</title>
+    <meta name="description" content="Instructions pour supprimer votre compte RIDN et toutes vos données associées.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            color: #555;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        .steps {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .steps ol {
+            margin-left: 20px;
+        }
+
+        .steps li {
+            margin: 12px 0;
+            font-size: 1.05em;
+            color: #333;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .info-box p {
+            color: #856404;
+            margin: 8px 0;
+        }
+
+        .data-list {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .data-list ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .data-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05em;
+            color: #333;
+        }
+
+        .data-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .contact-box {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-box a:hover {
+            background: #764ba2;
+        }
+
+        .warning {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning h4 {
+            color: #721c24;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .warning p {
+            color: #721c24;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏍️ RIDN</h1>
+            <p>Suppression de compte et données</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Comment supprimer votre compte RIDN</h2>
+                <p>Nous comprenons que vous souhaitiez supprimer votre compte. Cette page vous explique comment procéder et quelles données seront supprimées.</p>
+            </div>
+
+            <div class="section">
+                <h3>📱 Option 1 : Depuis l'application (Recommandé)</h3>
+                <div class="steps">
+                    <p><strong>Si vous avez accès à l'application RIDN :</strong></p>
+                    <ol>
+                        <li>Ouvrez l'application RIDN</li>
+                        <li>Allez dans <strong>Paramètres</strong> (icône ⚙️)</li>
+                        <li>Sélectionnez <strong>"Mon compte"</strong></li>
+                        <li>Cliquez sur <strong>"Supprimer mon compte"</strong></li>
+                        <li>Confirmez votre choix</li>
+                    </ol>
+                    <p style="margin-top: 15px;"><em>Votre compte sera supprimé immédiatement et définitivement.</em></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📧 Option 2 : Par email</h3>
+                <p>Si vous ne pouvez pas accéder à l'application, vous pouvez demander la suppression de votre compte par email.</p>
+                
+                <div class="contact-box">
+                    <h3>Demande de suppression</h3>
+                    <p>Envoyez un email à :</p>
+                    <a href="mailto:admin@ridnapp.com?subject=Demande%20de%20suppression%20de%20compte%20RIDN">admin@ridnapp.com</a>
+                    <p style="margin-top: 20px; font-size: 0.95em; color: #666;">
+                        <strong>Objet :</strong> Demande de suppression de compte RIDN<br>
+                        <strong>Contenu :</strong> Indiquez votre adresse email d'inscription
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h4>⏱️ Délai de traitement</h4>
+                    <p>Nous traiterons votre demande sous <strong>48 heures maximum</strong>.</p>
+                    <p>Vous recevrez un email de confirmation une fois la suppression effectuée.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🗑️ Données supprimées</h2>
+                <p>Lors de la suppression de votre compte, les données suivantes seront <strong>définitivement supprimées</strong> :</p>
+                
+                <div class="data-list">
+                    <ul>
+                        <li>Profil complet (nom, prénom, bio, date de naissance)</li>
+                        <li>Toutes vos photos de profil</li>
+                        <li>Vos préférences et paramètres</li>
+                        <li>Historique de matches</li>
+                        <li>Tous vos likes envoyés et reçus</li>
+                        <li>Conversations et messages (pour vous ET vos correspondants)</li>
+                        <li>Localisation enregistrée</li>
+                        <li>Informations sur votre style de moto</li>
+                        <li>Abonnement Premium (le cas échéant)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📋 Données conservées temporairement</h3>
+                <p>Certaines données peuvent être conservées temporairement pour des raisons légales ou de sécurité :</p>
+                
+                <div class="data-list">
+                    <ul>
+                        <li><strong>Historique de modération</strong> : conservé 30 jours (en cas de signalement actif)</li>
+                        <li><strong>Logs de sécurité</strong> : conservés 30 jours (prévention fraude)</li>
+                        <li><strong>Données de facturation</strong> : conservées selon obligations légales (jusqu'à 10 ans)</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 15px;"><em>Ces données ne sont pas visibles publiquement et sont automatiquement supprimées après la période de rétention.</em></p>
+            </div>
+
+            <div class="warning">
+                <h4>⚠️ Attention : Action irréversible</h4>
+                <p><strong>La suppression de votre compte est définitive et irréversible.</strong></p>
+                <p>Vous ne pourrez pas :</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Récupérer votre profil</li>
+                    <li>Restaurer vos photos</li>
+                    <li>Retrouver vos conversations</li>
+                    <li>Récupérer vos matches</li>
+                </ul>
+                <p style="margin-top: 10px;">Si vous souhaitez simplement faire une pause, vous pouvez <strong>masquer votre profil</strong> temporairement dans les paramètres de l'application.</p>
+            </div>
+
+            <div class="section">
+                <h2>💳 Remboursement d'abonnement</h2>
+                <p>La suppression de votre compte <strong>ne donne pas droit à un remboursement</strong> automatique de votre abonnement Premium en cours.</p>
+                
+                <div class="info-box">
+                    <h4>Pour demander un remboursement :</h4>
+                    <p><strong>iOS (App Store) :</strong> Contactez le support Apple via l'App Store</p>
+                    <p><strong>Android (Play Store) :</strong> Contactez le support Google Play via la Play Console</p>
+                    <p style="margin-top: 10px;"><em>Les remboursements sont soumis aux conditions d'Apple et Google.</em></p>
+                </div>
+
+                <p style="margin-top: 15px;">N'oubliez pas d'<strong>annuler votre abonnement</strong> dans les réglages de votre téléphone pour éviter tout renouvellement automatique.</p>
+            </div>
+
+            <div class="section">
+                <h2>🔒 Protection de vos données</h2>
+                <p>Chez RIDN, nous prenons la protection de vos données très au sérieux :</p>
+                
+                <div class="data-list">
+                    <ul>
+                        <li>Toutes les données sont chiffrées en transit (HTTPS/TLS)</li>
+                        <li>Stockage sécurisé sur serveurs Firebase (Google Cloud)</li>
+                        <li>Conformité RGPD (droit à l'oubli respecté)</li>
+                        <li>Suppression définitive après 30 jours maximum</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>❓ Questions ou problèmes ?</h2>
+                <p>Si vous rencontrez des difficultés ou avez des questions concernant la suppression de votre compte :</p>
+                
+                <div class="contact-box">
+                    <h3>Contactez-nous</h3>
+                    <p>Email : <strong>admin@ridnapp.com</strong></p>
+                    <p style="margin-top: 10px; font-size: 0.95em; color: #666;">
+                        Nous répondons généralement sous 24-48 heures
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 RIDN - Application de rencontre pour passionnés de moto</p>
+            <p style="margin-top: 10px;">
+                <a href="https://www.ridnapp.com/privacy-policy">Politique de confidentialité</a> • 
+                <a href="https://www.ridnapp.com/terms">Conditions d'utilisation</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
