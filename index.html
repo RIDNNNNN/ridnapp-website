@@ -114,7 +114,7 @@
             border-bottom: 1px solid rgba(240,221,215,0.5);
         }
         .nav-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
-        .nav-brand img { height: 36px; width: auto; }
+        .nav-brand img { height: 36px; width: auto; border-radius: 8px; }
         .nav-links { display: flex; align-items: center; gap: 1.5rem; }
         .nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; font-weight: 400; transition: color 0.2s; }
         .nav-link:hover { color: var(--text); }
@@ -141,6 +141,7 @@
         .hero-logo {
             width: 96px; height: auto; margin-bottom: 1.5rem;
             animation: fadeInDown 0.8s ease forwards; opacity: 0;
+            border-radius: 20px;
         }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 0.5rem;
@@ -313,6 +314,14 @@
             margin-bottom: 2rem; position: relative; z-index: 1;
         }
         .mid-cta .hero-buttons { position: relative; z-index: 1; animation: none; opacity: 1; }
+        .mid-cta-link {
+            display: inline-block; position: relative; z-index: 1;
+            color: var(--coral); font-weight: 600; font-size: 1.1rem;
+            text-decoration: none; letter-spacing: 0.02em;
+            padding: 0.6rem 0; border-bottom: 2px solid var(--coral);
+            transition: opacity 0.2s;
+        }
+        .mid-cta-link:hover { opacity: 0.7; }
 
         /* ── FAQ — cream bg ── */
         .faq-section {
@@ -347,7 +356,7 @@
             box-shadow: 0 16px 48px rgba(45,35,32,0.08);
         }
         .cta-box::before { content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px; background: linear-gradient(90deg, transparent, var(--coral), transparent); }
-        .cta-logo { width: 60px; height: auto; margin-bottom: 1.5rem; }
+        .cta-logo { width: 60px; height: auto; margin-bottom: 1.5rem; border-radius: 14px; }
         .cta-box h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: 0.04em; margin-bottom: 0.5rem; }
         .cta-box .cta-badge {
             display: inline-flex; align-items: center; gap: 0.5rem;
@@ -366,7 +375,7 @@
             max-width: 1100px; margin: 0 auto; flex-wrap: wrap; gap: 1rem;
         }
         .footer-brand { display: flex; align-items: center; gap: 0.5rem; }
-        .footer-brand img { height: 28px; width: auto; opacity: 0.5; }
+        .footer-brand img { height: 28px; width: auto; opacity: 0.5; border-radius: 6px; }
         .footer-links { display: flex; gap: 2rem; }
         .footer-links a { color: var(--text-light); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
         .footer-links a:hover { color: var(--text); }
@@ -401,7 +410,7 @@
             .hero h1 { font-size: clamp(2.8rem, 12vw, 3.5rem); }
             .hero-sub { font-size: 0.95rem; margin: 0.8rem auto 1.5rem; }
 
-            .hero-buttons, .mid-cta .hero-buttons, .store-buttons {
+            .hero-buttons, .store-buttons {
                 flex-direction: column; width: 100%; gap: 0.7rem;
             }
             .btn-store {
@@ -588,14 +597,7 @@
     <section class="mid-cta reveal">
         <h2 class="mid-cta-title">TA PROCHAINE <span>HISTOIRE</span><br>COMMENCE SUR DEUX ROUES</h2>
         <p class="mid-cta-sub">Gratuite. Disponible maintenant. Deux roues, un match.</p>
-        <div class="hero-buttons">
-            <a href="https://apps.apple.com/fr/app/ridn/id6755940607" target="_blank" rel="noopener" class="btn-store apple">
-                <span class="store-text"><small>Télécharger sur l'</small><strong>App Store</strong></span>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.onevra.ridn" target="_blank" rel="noopener" class="btn-store google">
-                <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
-            </a>
-        </div>
+        <a href="#download" class="mid-cta-link">Télécharger RIDN →</a>
     </section>
 
     <!-- 6. FAQ -->
