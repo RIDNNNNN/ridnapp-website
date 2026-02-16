@@ -3,888 +3,670 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIDN — L'appli de rencontres pour la communauté moto | Sortie le 14 février</title>
-    <meta name="description" content="RIDN est l'application de rencontres faite pour les passionné·e·s de moto. Swipe, match et roulez ensemble. Disponible le 14 février.">
+    <title>RIDN — L'appli de rencontres pour motards | Rencontre moto gratuite</title>
+    <meta name="description" content="RIDN est l'application de rencontres 100% dédiée aux passionné·e·s de moto. Swipe, match et roulez ensemble. Gratuite sur iOS et Android. Rejoins la communauté motard.">
+    <meta name="keywords" content="rencontre motard, appli rencontre moto, dating moto, rencontre biker, application motard célibataire, tinder moto, rencontre motocycliste, RIDN app, communauté moto, rencontre deux roues">
+    <meta name="author" content="RIDN - Onevra">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ridnapp.com/">
+
     <meta property="og:title" content="RIDN — L'appli de rencontres pour la communauté moto">
-    <meta property="og:description" content="L'application de rencontres pour les passionné·e·s de moto. Sortie le 14 février 2025.">
+    <meta property="og:description" content="L'application de rencontres dédiée aux passionné·e·s de moto. Gratuite sur iOS et Android.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ridnapp.com/">
+    <meta property="og:image" content="https://ridnapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="RIDN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RIDN — L'appli de rencontres pour motards">
+    <meta name="twitter:description" content="Swipe, match et roulez ensemble. L'appli de rencontres 100% moto, gratuite.">
+    <meta name="twitter:image" content="https://ridnapp.com/og-image.png">
+
+    <meta property="al:ios:app_store_id" content="6755940607">
+    <meta property="al:ios:app_name" content="RIDN">
+    <meta property="al:android:package" content="com.onevra.ridn">
+    <meta property="al:android:app_name" content="RIDN">
+
     <link rel="icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "RIDN",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "SocialNetworkingApplication",
+        "description": "RIDN est l'application de rencontres dédiée aux passionnés de moto. Swipe, match et roulez ensemble.",
+        "url": "https://ridnapp.com",
+        "downloadUrl": [
+            "https://apps.apple.com/fr/app/ridn/id6755940607",
+            "https://play.google.com/store/apps/details?id=com.onevra.ridn"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "author": { "@type": "Organization", "name": "Onevra", "url": "https://ridnapp.com" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "RIDN est-elle gratuite ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, RIDN est 100% gratuite pour créer ton profil, swiper, matcher et discuter. Des options payantes sont disponibles pour aller plus loin, mais tout l'essentiel est gratuit." }
+            },
+            {
+                "@type": "Question",
+                "name": "RIDN est-elle disponible sur iPhone et Android ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, RIDN est disponible sur l'App Store (iOS 15.1 et plus) et le Google Play Store (Android). L'inscription prend moins de 2 minutes." }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment fonctionnent les rencontres sur RIDN ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "C'est simple : parcours les profils de motards près de chez toi, swipe à droite si tu es intéressé, à gauche pour passer. Quand deux personnes swipent à droite, c'est un match et vous pouvez discuter en temps réel !" }
+            }
+        ]
+    }
+    </script>
+
     <style>
         :root {
-            --black: #0a0a0a;
-            --dark: #111111;
-            --dark-card: #161616;
-            --accent: #E8372C;
-            --accent-glow: rgba(232, 55, 44, 0.35);
-            --white: #f5f5f0;
-            --grey: #8a8a8a;
-            --light-grey: #c5c5c0;
+            --white: #ffffff;
+            --cream: #FFFAF8;
+            --warm-light: #FFF5F2;
+            --warm-mid: #FFE8E0;
+            --card-border: #F0E6E3;
+            --text: #2D2320;
+            --text-secondary: #7C6B64;
+            --text-light: #B5A49D;
+            --coral: #F87171;
+            --coral-dark: #EF4444;
+            --coral-light: #FEE2E2;
+            --coral-glow: rgba(248, 113, 113, 0.15);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        section, nav, footer { max-width: 100vw; overflow-x: hidden; }
         html { scroll-behavior: smooth; overflow-x: hidden; }
 
         body {
             font-family: 'Outfit', sans-serif;
-            background: var(--black);
-            color: var(--white);
+            background: var(--cream);
+            color: var(--text);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-            width: 100%;
-        }
-
-        /* ── NOISE OVERLAY ── */
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 9999;
         }
 
         /* ── NAV ── */
         nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
+            position: fixed; top: 0; width: 100%; z-index: 100;
             padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(12px);
-            background: rgba(10,10,10,0.7);
-            border-bottom: 1px solid rgba(255,255,255,0.04);
+            display: flex; justify-content: space-between; align-items: center;
+            backdrop-filter: blur(16px);
+            background: rgba(255,249,247,0.88);
+            border-bottom: 1px solid rgba(240,221,215,0.5);
         }
-        .nav-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            text-decoration: none;
-        }
-        .nav-brand img {
-            height: 36px;
-            width: auto;
-        }
+        .nav-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+        .nav-brand img { height: 36px; width: auto; }
+        .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; font-weight: 400; transition: color 0.2s; }
+        .nav-link:hover { color: var(--text); }
         .nav-cta {
-            padding: 0.6rem 1.6rem;
-            background: var(--accent);
-            color: var(--white);
-            border: none;
-            border-radius: 50px;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 0.03em;
-            cursor: pointer;
-            text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.3s;
+            padding: 0.6rem 1.6rem; background: var(--coral); color: var(--white);
+            border: none; border-radius: 50px; font-family: 'Outfit', sans-serif;
+            font-weight: 500; font-size: 0.9rem;
+            cursor: pointer; text-decoration: none; transition: transform 0.2s, box-shadow 0.3s;
         }
-        .nav-cta:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 20px var(--accent-glow);
-        }
-
-        .nav-stores {
-            display: flex;
-            gap: 0.5rem;
-        }
-        .nav-store-tag {
-            padding: 0.5rem 1.1rem;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: var(--white);
-            border-radius: 50px;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 500;
-            font-size: 0.85rem;
-            user-select: none;
-        }
+        .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px var(--coral-glow); }
 
         /* ── HERO ── */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 8rem 2rem 4rem;
-            position: relative;
-            max-width: 100vw;
+            min-height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            padding: 8rem 2rem 4rem; position: relative;
         }
         .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: min(600px, 100vw);
-            height: 600px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            opacity: 0.25;
-            filter: blur(80px);
-            pointer-events: none;
+            content: ''; position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%);
+            width: min(500px, 90vw); height: 350px;
+            background: radial-gradient(circle, rgba(248,113,113,0.15) 0%, transparent 70%);
+            filter: blur(60px); pointer-events: none;
         }
-
         .hero-logo {
-            width: 120px;
-            height: auto;
-            margin-bottom: 2rem;
-            animation: fadeInDown 0.8s ease forwards;
-            opacity: 0;
-            filter: drop-shadow(0 0 30px var(--accent-glow));
+            width: 96px; height: auto; margin-bottom: 1.5rem;
+            animation: fadeInDown 0.8s ease forwards; opacity: 0;
         }
-
         .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+            display: inline-flex; align-items: center; gap: 0.5rem;
             padding: 0.45rem 1rem;
-            border: 1px solid rgba(232, 55, 44, 0.3);
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--accent);
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            animation: fadeInDown 0.8s 0.1s ease forwards;
-            opacity: 0;
+            background: var(--coral-light); border: 1px solid var(--warm-mid);
+            border-radius: 50px; font-size: 0.78rem; font-weight: 500;
+            color: var(--coral-dark); letter-spacing: 0.04em; text-transform: uppercase;
+            margin-bottom: 2rem; animation: fadeInDown 0.8s 0.1s ease forwards; opacity: 0;
         }
         .hero-badge::before {
-            content: '';
-            width: 6px; height: 6px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: pulse-dot 2s infinite;
+            content: ''; width: 6px; height: 6px; background: var(--coral);
+            border-radius: 50%; animation: pulse-dot 2s infinite;
         }
-
         .hero h1 {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(4.5rem, 14vw, 12rem);
-            line-height: 1.1;
-            letter-spacing: 0.04em;
-            animation: fadeInUp 0.8s 0.2s ease forwards;
-            opacity: 0;
-            position: relative;
-            z-index: 1;
+            font-size: clamp(4.5rem, 14vw, 11rem); line-height: 1.05;
+            letter-spacing: 0.04em; animation: fadeInUp 0.8s 0.2s ease forwards;
+            opacity: 0; position: relative; z-index: 1;
         }
-        .hero h1 .highlight { color: var(--accent); }
-
+        .hero h1 .highlight { color: var(--coral); }
         .hero-sub {
-            font-size: clamp(1rem, 2.5vw, 1.35rem);
-            font-weight: 300;
-            color: var(--light-grey);
-            max-width: 520px;
-            margin: 1.5rem auto 1rem;
-            line-height: 1.6;
-            animation: fadeInUp 0.8s 0.35s ease forwards;
-            opacity: 0;
-            position: relative;
-            z-index: 1;
+            font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 300;
+            color: var(--text-secondary); max-width: 520px;
+            margin: 1.5rem auto 2.5rem; line-height: 1.65;
+            animation: fadeInUp 0.8s 0.35s ease forwards; opacity: 0;
+            position: relative; z-index: 1;
         }
-
-        /* ── LAUNCH DATE ── */
-        .launch-date {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            margin-bottom: 2.5rem;
-            animation: fadeInUp 0.8s 0.45s ease forwards;
-            opacity: 0;
-            position: relative;
-            z-index: 1;
-        }
-        .launch-date .heart {
-            font-size: 1.2rem;
-            animation: heartbeat 1.5s infinite;
-        }
-        .launch-date .date-text {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.5rem;
-            letter-spacing: 0.08em;
-        }
-        .launch-date .date-text span { color: var(--accent); }
-
         .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            animation: fadeInUp 0.8s 0.55s ease forwards;
-            opacity: 0;
-            position: relative;
-            z-index: 1;
+            display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+            animation: fadeInUp 0.8s 0.55s ease forwards; opacity: 0;
+            position: relative; z-index: 1;
         }
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            padding: 0.9rem 2rem;
-            background: var(--accent);
-            color: var(--white);
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
+        .btn-store {
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            padding: 0.85rem 1.8rem; border-radius: 14px; text-decoration: none;
+            font-weight: 500; font-size: 0.95rem;
             transition: transform 0.2s, box-shadow 0.3s;
         }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px var(--accent-glow);
-        }
-        .btn-primary svg { width: 20px; height: 20px; }
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            padding: 0.9rem 2rem;
-            background: transparent;
-            color: var(--white);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: border-color 0.3s, background 0.3s;
-        }
-        .btn-secondary:hover {
-            border-color: rgba(255,255,255,0.35);
-            background: rgba(255,255,255,0.04);
-        }
-        .btn-secondary svg { width: 20px; height: 20px; }
+        .btn-store.apple { background: var(--text); color: var(--white); }
+        .btn-store.google { background: var(--white); color: var(--text); border: 1px solid var(--card-border); }
+        .btn-store:hover { transform: translateY(-2px); }
+        .btn-store.apple:hover { box-shadow: 0 8px 30px rgba(45,35,32,0.2); }
+        .btn-store.google:hover { box-shadow: 0 8px 30px rgba(45,35,32,0.07); }
+        .btn-store .store-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
+        .btn-store .store-text small { font-size: 0.6rem; font-weight: 400; opacity: 0.6; }
+        .btn-store .store-text strong { font-size: 0.95rem; }
 
-        .scroll-hint {
-            position: absolute;
-            bottom: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--grey);
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            animation: fadeInUp 1s 0.8s ease forwards;
-            opacity: 0;
+        .hero-reassurance {
+            display: flex; gap: 2rem; margin-top: 2rem;
+            animation: fadeInUp 0.8s 0.7s ease forwards; opacity: 0;
+            position: relative; z-index: 1;
         }
-        .scroll-hint .line {
-            width: 1px;
-            height: 40px;
-            background: linear-gradient(to bottom, var(--grey), transparent);
-            animation: scroll-line 2s infinite;
+        .hero-reassurance span {
+            font-size: 0.8rem; color: var(--text-secondary); font-weight: 400;
+            display: flex; align-items: center; gap: 0.4rem;
+        }
+        .hero-reassurance span::before {
+            content: '✓'; color: var(--coral); font-weight: 600; font-size: 0.75rem;
         }
 
-        /* ── HOW IT WORKS ── */
-        .how-it-works {
-            padding: 6rem 2rem 8rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            margin-top: 3.5rem;
-            position: relative;
-        }
-        .steps::before {
-            content: '';
-            position: absolute;
-            top: 48px;
-            left: 10%;
-            right: 10%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(232,55,44,0.3), rgba(232,55,44,0.3), transparent);
-            z-index: 0;
-        }
-
-        .step {
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        .step-number {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background: var(--dark-card);
-            border: 2px solid rgba(232,55,44,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.2rem;
-            transition: border-color 0.3s, background 0.3s;
-        }
-        .step:hover .step-number {
-            border-color: var(--accent);
-            background: rgba(232,55,44,0.1);
-        }
-        .step-number svg { color: var(--accent); }
-        .step h3 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.3rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-        .step p {
-            color: var(--grey);
-            font-size: 0.9rem;
-            line-height: 1.55;
-            font-weight: 300;
-            max-width: 240px;
-            margin: 0 auto;
-        }
-
-        /* ── SWIPE DEMO ── */
-        .swipe-demo-section {
-            padding: 0 2rem 8rem;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .swipe-visual {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2.5rem;
-            margin-top: 2.5rem;
-            flex-wrap: wrap;
-        }
-        .swipe-action {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .swipe-circle {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            transition: transform 0.2s;
-            cursor: default;
-        }
-        .swipe-circle:hover { transform: scale(1.15); }
-        .swipe-circle.nope { background: rgba(255,80,80,0.12); border: 1px solid rgba(255,80,80,0.25); color: #ff5050; }
-        .swipe-circle.like { background: rgba(80,220,100,0.12); border: 1px solid rgba(80,220,100,0.25); color: #50dc64; }
-        .swipe-label { font-size: 0.75rem; color: var(--grey); letter-spacing: 0.08em; text-transform: uppercase; }
-
-        .swipe-card-mock {
-            width: 190px;
-            height: 270px;
-            border-radius: 20px;
-            background: linear-gradient(145deg, #1a1a1a, #222);
-            border: 1px solid rgba(255,255,255,0.08);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.8rem;
-            position: relative;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-            animation: float-card 4s ease-in-out infinite;
-        }
-        .swipe-card-mock .mock-avatar {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), #ff6b5a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-        }
-        .swipe-card-mock .mock-name {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.15rem;
-            letter-spacing: 0.05em;
-        }
-        .swipe-card-mock .mock-bike {
-            font-size: 0.78rem;
-            color: var(--grey);
-            font-weight: 300;
-        }
-        .swipe-card-mock .mock-tag {
-            font-size: 0.65rem;
-            padding: 0.2rem 0.7rem;
-            background: rgba(232,55,44,0.15);
-            border-radius: 50px;
-            color: var(--accent);
-            letter-spacing: 0.05em;
-        }
-
-        /* ── FEATURES ── */
-        .features {
-            padding: 6rem 2rem 8rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        /* ── SECTION COMMONS ── */
         .section-label {
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--accent);
-            font-weight: 500;
-            margin-bottom: 1rem;
+            font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--coral); font-weight: 600; margin-bottom: 0.8rem;
         }
         .section-title {
             font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(2.2rem, 5vw, 3.5rem);
-            letter-spacing: 0.03em;
-            line-height: 1;
-            margin-bottom: 3.5rem;
+            letter-spacing: 0.03em; line-height: 1; margin-bottom: 3rem;
         }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+        .section-inner { max-width: 1000px; margin: 0 auto; }
+        .section-inner-wide { max-width: 1100px; margin: 0 auto; }
+
+        /* ── SWIPE DEMO — cream bg ── */
+        .swipe-demo-section {
+            padding: 6rem 2rem 7rem; text-align: center;
         }
+        .swipe-visual { display: flex; align-items: center; justify-content: center; gap: 2.5rem; margin-top: 2.5rem; flex-wrap: wrap; }
+        .swipe-action { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+        .swipe-circle {
+            width: 56px; height: 56px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; transition: transform 0.2s; cursor: default;
+        }
+        .swipe-circle:hover { transform: scale(1.15); }
+        .swipe-circle.nope { background: var(--coral-light); border: 1px solid var(--warm-mid); color: var(--coral); }
+        .swipe-circle.like { background: #D1FAE5; border: 1px solid #A7F3D0; color: #10B981; }
+        .swipe-label { font-size: 0.75rem; color: var(--text-light); letter-spacing: 0.08em; text-transform: uppercase; }
+        .swipe-card-mock {
+            width: 190px; height: 270px; border-radius: 20px;
+            background: var(--white);
+            border: 1px solid var(--card-border);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem;
+            box-shadow: 0 12px 40px rgba(45,35,32,0.1);
+            animation: float-card 4s ease-in-out infinite;
+        }
+        .swipe-card-mock .mock-avatar {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--coral), #fb923c);
+            display: flex; align-items: center; justify-content: center; font-size: 1.6rem;
+        }
+        .swipe-card-mock .mock-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; letter-spacing: 0.05em; }
+        .swipe-card-mock .mock-bike { font-size: 0.78rem; color: var(--text-secondary); font-weight: 300; }
+        .swipe-card-mock .mock-tag { font-size: 0.65rem; padding: 0.2rem 0.7rem; background: var(--coral-light); border-radius: 50px; color: var(--coral-dark); }
+
+        /* ── HOW IT WORKS — warm light bg ── */
+        .how-it-works {
+            padding: 6rem 2rem 7rem;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-light) 30%, var(--warm-light) 70%, var(--cream) 100%);
+        }
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; position: relative; }
+        .steps::before { content: ''; position: absolute; top: 48px; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, var(--warm-mid), var(--warm-mid), transparent); z-index: 0; }
+        .step { text-align: center; position: relative; z-index: 1; }
+        .step-number {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--white); border: 2px solid var(--warm-mid);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.2rem;
+            transition: border-color 0.3s, background 0.3s;
+            box-shadow: 0 4px 16px rgba(45,35,32,0.07);
+        }
+        .step:hover .step-number { border-color: var(--coral); background: var(--coral-light); }
+        .step-number svg { color: var(--coral); }
+        .step h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .step p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; font-weight: 300; max-width: 260px; margin: 0 auto; }
+
+        /* ── FEATURES — cream bg ── */
+        .features {
+            padding: 6rem 2rem 7rem;
+        }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .feature-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 2.2rem;
-            transition: border-color 0.3s, transform 0.3s;
+            background: var(--white); border: 1px solid var(--card-border);
+            border-radius: 20px; padding: 2.2rem;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(45,35,32,0.04);
         }
-        .feature-card:hover {
-            border-color: rgba(232, 55, 44, 0.25);
-            transform: translateY(-4px);
-        }
+        .feature-card:hover { border-color: var(--coral); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(248,113,113,0.1); }
         .feature-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: rgba(232, 55, 44, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.2rem;
-            color: var(--accent);
+            width: 48px; height: 48px; border-radius: 14px;
+            background: var(--coral-light);
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1.2rem; color: var(--coral);
         }
-        .feature-card h3 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.4rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.6rem;
-        }
-        .feature-card p {
-            color: var(--grey);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            font-weight: 300;
-        }
+        .feature-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.05em; margin-bottom: 0.6rem; }
+        .feature-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; font-weight: 300; }
 
-        /* ── TAGLINE ── */
-        .tagline-section {
-            padding: 4rem 2rem 6rem;
-            text-align: center;
-            position: relative;
+        /* ── MID CTA — warm light bg ── */
+        .mid-cta {
+            padding: 5rem 2rem; text-align: center; position: relative;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-light) 30%, var(--warm-light) 70%, var(--cream) 100%);
         }
-        .tagline-section::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
+        .mid-cta::before {
+            content: ''; position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            width: min(500px, 90vw);
-            height: 300px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            opacity: 0.15;
-            filter: blur(60px);
-            pointer-events: none;
+            width: min(400px, 80vw); height: 250px;
+            background: radial-gradient(circle, rgba(248,113,113,0.12) 0%, transparent 70%);
+            filter: blur(50px); pointer-events: none;
         }
-        .tagline-quote {
+        .mid-cta-title {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(2rem, 6vw, 4.5rem);
-            line-height: 1.05;
-            letter-spacing: 0.02em;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            position: relative;
-            z-index: 1;
+            font-size: clamp(2rem, 6vw, 4rem);
+            line-height: 1.05; letter-spacing: 0.02em;
+            max-width: 700px; margin: 0 auto 1rem;
+            position: relative; z-index: 1;
         }
-        .tagline-quote span { color: var(--accent); }
-        .tagline-sub {
-            color: var(--grey);
-            font-size: 1.05rem;
-            font-weight: 300;
-            position: relative;
-            z-index: 1;
+        .mid-cta-title span { color: var(--coral); }
+        .mid-cta-sub {
+            color: var(--text-secondary); font-size: 1.05rem; font-weight: 300;
+            margin-bottom: 2rem; position: relative; z-index: 1;
         }
+        .mid-cta .hero-buttons { position: relative; z-index: 1; animation: none; opacity: 1; }
 
-        /* ── CTA SECTION ── */
+        /* ── FAQ — cream bg ── */
+        .faq-section {
+            padding: 6rem 2rem 7rem;
+        }
+        .faq-inner { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid var(--card-border); padding: 1.5rem 0; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 1rem; user-select: none; }
+        .faq-question h3 { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 500; line-height: 1.4; }
+        .faq-toggle {
+            width: 32px; height: 32px; border-radius: 50%;
+            background: var(--warm-light);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; transition: transform 0.3s, background 0.3s;
+            color: var(--text-light); font-size: 1.2rem;
+        }
+        .faq-item.open .faq-toggle { transform: rotate(45deg); background: var(--coral-light); color: var(--coral); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 300px; padding-top: 1rem; }
+        .faq-answer p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
+
+        /* ── FINAL CTA — warm gradient ── */
         .cta-section {
-            padding: 5rem 2rem 6rem;
-            text-align: center;
+            padding: 5rem 2rem 6rem; text-align: center;
         }
         .cta-box {
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 3.5rem 2.5rem;
-            border: 1px solid rgba(255,255,255,0.06);
+            max-width: 650px; margin: 0 auto; padding: 3.5rem 2.5rem;
+            border: 1px solid var(--card-border);
             border-radius: 24px;
-            background: linear-gradient(145deg, var(--dark-card), var(--dark));
-            position: relative;
-            overflow: hidden;
+            background: var(--white);
+            position: relative; overflow: hidden;
+            box-shadow: 0 16px 48px rgba(45,35,32,0.08);
         }
-        .cta-box::before {
-            content: '';
-            position: absolute;
-            top: -1px;
-            left: 20%;
-            right: 20%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        .cta-box::before { content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px; background: linear-gradient(90deg, transparent, var(--coral), transparent); }
+        .cta-logo { width: 60px; height: auto; margin-bottom: 1.5rem; }
+        .cta-box h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+        .cta-box .cta-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            color: var(--coral); font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.15rem; letter-spacing: 0.1em; margin-bottom: 0.8rem;
         }
-        .cta-logo {
-            width: 70px;
-            height: auto;
-            margin-bottom: 1.5rem;
-            filter: drop-shadow(0 0 20px var(--accent-glow));
-        }
-        .cta-box h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            letter-spacing: 0.04em;
-            margin-bottom: 0.5rem;
-        }
-        .cta-box .cta-date {
-            color: var(--accent);
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.15rem;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.8rem;
-        }
-        .cta-box p {
-            color: var(--grey);
-            font-weight: 300;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-        }
-        .store-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .store-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.7rem;
-            padding: 0.85rem 1.8rem;
-            border-radius: 12px;
-            text-decoration: none;
-            color: var(--white);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: transform 0.2s, box-shadow 0.3s;
-        }
-        .store-btn.apple { background: var(--white); color: var(--black); }
-        .store-btn.google { background: var(--dark-card); border: 1px solid rgba(255,255,255,0.1); }
-        .store-btn:hover { transform: translateY(-2px); }
-        .store-btn.apple:hover { box-shadow: 0 8px 25px rgba(255,255,255,0.15); }
-        .store-btn.google:hover { box-shadow: 0 8px 25px rgba(255,255,255,0.05); }
-        .store-btn svg { width: 22px; height: 22px; }
-        .store-btn .store-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
-        .store-btn .store-text small { font-size: 0.65rem; font-weight: 400; opacity: 0.7; }
-        .store-btn .store-text strong { font-size: 0.95rem; }
+        .cta-box p { color: var(--text-secondary); font-weight: 300; margin-bottom: 2rem; font-size: 1rem; }
+        .store-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
         /* ── FOOTER ── */
         footer {
-            padding: 3rem 2rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1100px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            gap: 1rem;
+            padding: 3rem 2rem; border-top: 1px solid var(--card-border);
         }
-        .footer-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1100px; margin: 0 auto; flex-wrap: wrap; gap: 1rem;
         }
-        .footer-brand img { height: 28px; width: auto; opacity: 0.6; }
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-        }
-        .footer-links a {
-            color: var(--grey);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.2s;
-        }
-        .footer-links a:hover { color: var(--white); }
-        .footer-copy {
-            width: 100%;
-            text-align: center;
-            color: rgba(255,255,255,0.2);
-            font-size: 0.75rem;
-            margin-top: 1.5rem;
-        }
+        .footer-brand { display: flex; align-items: center; gap: 0.5rem; }
+        .footer-brand img { height: 28px; width: auto; opacity: 0.5; }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a { color: var(--text-light); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--text); }
+        .footer-copy { width: 100%; text-align: center; color: var(--text-light); font-size: 0.75rem; margin-top: 1.5rem; max-width: 1100px; margin-left: auto; margin-right: auto; }
 
         /* ── ANIMATIONS ── */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes pulse-dot {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
-        @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            15% { transform: scale(1.25); }
-            30% { transform: scale(1); }
-            45% { transform: scale(1.15); }
-            60% { transform: scale(1); }
-        }
-        @keyframes scroll-line {
-            0% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-            50% { opacity: 0.3; transform: scaleY(0.4); transform-origin: top; }
-            100% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-        }
-        @keyframes float-card {
-            0%, 100% { transform: translateY(0) rotate(-2deg); }
-            50% { transform: translateY(-10px) rotate(1deg); }
-        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        @keyframes float-card { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(1deg); } }
 
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
-        /* ── RESPONSIVE ── */
-        @media (max-width: 640px) {
-            nav { padding: 1rem 1.2rem; }
-            .nav-brand img { height: 28px; }
-            .nav-store-tag { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
-            .hero { padding: 5rem 1.2rem 3rem; min-height: auto; }
-            .hero-logo { width: 80px; margin-bottom: 1.5rem; }
-            .hero-badge { font-size: 0.65rem; padding: 0.35rem 0.8rem; }
-            .hero h1 { font-size: 2.5rem; word-break: break-word; }
-            .hero-sub { font-size: 0.9rem; margin: 1rem auto 0.8rem; padding: 0 0.5rem; }
-            .launch-date .date-text { font-size: 1.1rem; }
-            .how-it-works, .features { padding: 3.5rem 1.2rem 4rem; }
-            .section-title { font-size: 1.8rem; margin-bottom: 2rem; }
-            .features-grid { grid-template-columns: 1fr; }
-            .feature-card { padding: 1.5rem; }
+        /* ── RESPONSIVE — TABLET ── */
+        @media (max-width: 900px) {
+            .steps { grid-template-columns: 1fr; gap: 2rem; }
             .steps::before { display: none; }
-            .steps { gap: 2rem; grid-template-columns: 1fr 1fr; }
-            .step p { max-width: 100%; font-size: 0.8rem; }
-            .step h3 { font-size: 1.1rem; }
-            .step-number { width: 52px; height: 52px; }
-            .swipe-demo-section { padding: 0 1.2rem 4rem; }
-            .swipe-visual {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                gap: 0.8rem;
+            .features-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ── RESPONSIVE — MOBILE ── */
+        @media (max-width: 640px) {
+            nav { padding: 0.8rem 1rem; }
+            .nav-brand img { height: 28px; }
+            .nav-link { display: none; }
+            .nav-cta { padding: 0.55rem 1.2rem; font-size: 0.8rem; }
+
+            .hero { padding: 5.5rem 1.2rem 3rem; min-height: auto; }
+            .hero-logo { width: 68px; margin-bottom: 1.2rem; }
+            .hero-badge { font-size: 0.6rem; padding: 0.3rem 0.7rem; margin-bottom: 1.2rem; }
+            .hero h1 { font-size: clamp(2.8rem, 12vw, 3.5rem); }
+            .hero-sub { font-size: 0.95rem; margin: 0.8rem auto 1.5rem; }
+
+            .hero-buttons, .mid-cta .hero-buttons, .store-buttons {
+                flex-direction: column; width: 100%; gap: 0.7rem;
             }
-            .swipe-card-mock { 
-                width: 130px; 
-                height: 185px;
-                flex-shrink: 0;
+            .btn-store {
+                width: 100%; justify-content: center;
+                padding: 0.9rem 1.5rem; min-height: 48px; border-radius: 14px;
             }
-            .swipe-card-mock .mock-avatar { width: 48px; height: 48px; font-size: 1.2rem; }
-            .swipe-card-mock .mock-name { font-size: 1rem; }
+            .btn-store .store-text { align-items: center; }
+            .btn-store .store-text strong { font-size: 1rem; }
+
+            .hero-reassurance { flex-direction: column; gap: 0.4rem; margin-top: 1.5rem; align-items: center; }
+            .hero-reassurance span { font-size: 0.78rem; }
+
+            .swipe-demo-section { padding: 3rem 1rem 3.5rem; }
+            .swipe-visual { gap: 0.8rem; flex-wrap: nowrap; }
+            .swipe-card-mock { width: 130px; height: 185px; flex-shrink: 0; }
+            .swipe-card-mock .mock-avatar { width: 44px; height: 44px; font-size: 1.1rem; }
+            .swipe-card-mock .mock-name { font-size: 0.95rem; }
             .swipe-card-mock .mock-bike { font-size: 0.7rem; }
-            .swipe-circle { width: 42px; height: 42px; font-size: 1.1rem; }
+            .swipe-card-mock .mock-tag { font-size: 0.6rem; }
+            .swipe-circle { width: 44px; height: 44px; font-size: 1.1rem; }
             .swipe-label { font-size: 0.65rem; }
-            .swipe-action span { font-size: 0.7rem !important; }
-            .tagline-quote { font-size: 1.6rem; padding: 0 0.5rem; }
-            .tagline-sub { font-size: 0.9rem; }
-            .cta-section { padding: 3rem 1.2rem 4rem; }
-            .cta-box { padding: 2rem 1.2rem; }
-            .cta-box h2 { font-size: 1.8rem; }
-            .cta-box .cta-date { font-size: 0.85rem; }
-            .cta-logo { width: 55px; }
-            .footer-links { gap: 1rem; flex-wrap: wrap; justify-content: center; font-size: 0.8rem; }
-            footer { justify-content: center; text-align: center; padding: 2rem 1.2rem; }
+
+            .section-label { font-size: 0.65rem; margin-bottom: 0.6rem; }
+            .section-title { font-size: 1.7rem; margin-bottom: 1.5rem; }
+            .how-it-works, .features, .faq-section { padding: 3rem 1.2rem 3.5rem; }
+
+            .step-number { width: 52px; height: 52px; }
+            .step h3 { font-size: 1.1rem; }
+            .step p { max-width: 100%; font-size: 0.85rem; }
+
+            .feature-card { padding: 1.5rem; border-radius: 16px; }
+            .feature-icon { width: 42px; height: 42px; border-radius: 10px; margin-bottom: 1rem; }
+            .feature-card h3 { font-size: 1.2rem; }
+            .feature-card p { font-size: 0.9rem; }
+
+            .mid-cta { padding: 3rem 1.2rem; }
+            .mid-cta-title { font-size: 1.7rem; }
+            .mid-cta-sub { font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+            .faq-question { min-height: 48px; }
+            .faq-question h3 { font-size: 0.95rem; }
+            .faq-toggle { width: 36px; height: 36px; }
+
+            .cta-section { padding: 2.5rem 1.2rem 3.5rem; }
+            .cta-box { padding: 2rem 1.2rem; border-radius: 20px; }
+            .cta-box h2 { font-size: 1.7rem; }
+            .cta-box .cta-badge { font-size: 0.8rem; }
+            .cta-logo { width: 46px; }
+            .cta-box p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+            footer { padding: 2rem 1.2rem; }
+            .footer-inner { justify-content: center; text-align: center; }
+            .footer-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+            .footer-links a { font-size: 0.8rem; min-height: 44px; display: flex; align-items: center; }
             .footer-copy { font-size: 0.7rem; }
-            .scroll-hint { display: none; }
+        }
+
+        @media (max-width: 375px) {
+            .hero h1 { font-size: 2.4rem; }
+            .hero-sub { font-size: 0.88rem; }
+            .swipe-card-mock { width: 110px; height: 160px; }
+            .swipe-card-mock .mock-avatar { width: 38px; height: 38px; font-size: 1rem; }
+            .swipe-card-mock .mock-name { font-size: 0.85rem; }
+            .swipe-circle { width: 38px; height: 38px; font-size: 1rem; }
+            .section-title { font-size: 1.5rem; }
+            .mid-cta-title { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAV -->
     <nav>
         <a href="#" class="nav-brand">
-            <img src="logo.png" alt="RIDN">
+            <img src="logo.png" alt="RIDN - Application de rencontre pour motards">
         </a>
-        <div class="nav-stores">
-            <span class="nav-store-tag">Apple</span>
-            <span class="nav-store-tag">Android</span>
+        <div class="nav-links">
+            <a href="#how" class="nav-link">Comment ça marche</a>
+            <a href="#features" class="nav-link">Pourquoi RIDN</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#download" class="nav-cta">Télécharger</a>
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- 1. HERO -->
     <section class="hero">
-        <img src="logo.png" alt="RIDN Logo" class="hero-logo">
-        <div class="hero-badge">Sortie le 14 février — Saint-Valentin</div>
+        <img src="logo.png" alt="RIDN Logo - Appli rencontre moto" class="hero-logo">
+        <div class="hero-badge">Disponible maintenant — iOS & Android</div>
         <h1>SWIPE, MATCH,<br><span class="highlight">ROULEZ</span> ENSEMBLE</h1>
-        <p class="hero-sub">La première appli de rencontres dédiée à la communauté moto. Trouve quelqu'un qui partage ta passion.</p>
-        <div class="launch-date">
-            <span class="heart">❤️</span>
-            <span class="date-text">Disponible le <span>14 février 2025</span></span>
+        <p class="hero-sub">La première appli de rencontres dédiée aux passionnés de moto. Trouve un·e motard·e qui partage ta passion pour les deux roues.</p>
+        <div class="hero-buttons">
+            <a href="https://apps.apple.com/fr/app/ridn/id6755940607" target="_blank" rel="noopener" class="btn-store apple">
+                <span class="store-text"><small>Télécharger sur l'</small><strong>App Store</strong></span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.onevra.ridn" target="_blank" rel="noopener" class="btn-store google">
+                <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
+            </a>
         </div>
-
-        <div class="scroll-hint">
-            <div class="line"></div>
-            Scroll
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works" id="how">
-        <div class="reveal">
-            <p class="section-label">Comment ça marche</p>
-            <h2 class="section-title">SWIPE. MATCH.<br>ROULEZ.</h2>
-        </div>
-        <div class="steps reveal">
-            <div class="step">
-                <div class="step-number">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                </div>
-                <h3>CRÉE TON PROFIL</h3>
-                <p>Ajoute tes photos, ta moto, ton style de conduite. Montre à la communauté qui tu es — sur la route et en dehors.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-                </div>
-                <h3>SWIPE & DÉCOUVRE</h3>
-                <p>Parcours les profils près de chez toi. Swipe à droite si ça te plaît, à gauche pour passer. C'est aussi simple que ça.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                </div>
-                <h3>C'EST UN MATCH !</h3>
-                <p>Quand vous swipez tous les deux à droite, c'est un match ! Discutez et planifiez votre première sortie ensemble.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                </div>
-                <h3>ROULEZ ENSEMBLE</h3>
-                <p>Rencontrez-vous, prenez la route et construisez quelque chose de vrai. Votre prochaine histoire commence sur deux roues.</p>
-            </div>
+        <div class="hero-reassurance">
+            <span>100% gratuite</span>
+            <span>Inscription en 2 min</span>
+            <span>Toutes catégories de motos</span>
         </div>
     </section>
 
-    <!-- SWIPE DEMO -->
+    <!-- 2. SWIPE DEMO -->
     <section class="swipe-demo-section reveal">
-        <p class="section-label">Le système de swipe</p>
-        <h2 class="section-title">TON CHOIX, TA ROUTE</h2>
-        <div class="swipe-visual">
-            <div class="swipe-action">
-                <div class="swipe-circle nope">✕</div>
-                <span class="swipe-label">Swipe gauche</span>
-                <span style="color: var(--grey); font-size: 0.8rem; font-weight: 300;">Passer</span>
-            </div>
-            <div class="swipe-card-mock">
-                <div class="mock-avatar">🏍️</div>
-                <div class="mock-name">Alex, 28</div>
-                <div class="mock-bike">Roadster 700cc</div>
-                <div class="mock-tag">Roadster</div>
-            </div>
-            <div class="swipe-action">
-                <div class="swipe-circle like">♥</div>
-                <span class="swipe-label">Swipe droite</span>
-                <span style="color: var(--grey); font-size: 0.8rem; font-weight: 300;">Liker</span>
+        <div class="section-inner">
+            <p class="section-label">Simple comme un swipe</p>
+            <h2 class="section-title">TROUVE TON MATCH<br>EN UN GESTE</h2>
+            <div class="swipe-visual">
+                <div class="swipe-action">
+                    <div class="swipe-circle nope">✕</div>
+                    <span class="swipe-label">Passer</span>
+                </div>
+                <div class="swipe-card-mock">
+                    <div class="mock-avatar">🏍️</div>
+                    <div class="mock-name">Alex, 28</div>
+                    <div class="mock-bike">Roadster 700cc</div>
+                    <div class="mock-tag">Roadster</div>
+                </div>
+                <div class="swipe-action">
+                    <div class="swipe-circle like">♥</div>
+                    <span class="swipe-label">Liker</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURES -->
+    <!-- 3. COMMENT ÇA MARCHE -->
+    <section class="how-it-works" id="how">
+        <div class="section-inner reveal">
+            <p class="section-label">En 3 étapes</p>
+            <h2 class="section-title">COMMENT ÇA MARCHE</h2>
+        </div>
+        <div class="section-inner">
+            <div class="steps reveal">
+                <div class="step">
+                    <div class="step-number"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                    <h3>1. CRÉE TON PROFIL</h3>
+                    <p>Ajoute tes photos, ta moto et ton style de conduite. Montre à la communauté qui tu es — sur la route et en dehors.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                    <h3>2. SWIPE & MATCH</h3>
+                    <p>Parcours les profils de motards près de chez toi. Swipe, et quand l'intérêt est réciproque, c'est un match !</p>
+                </div>
+                <div class="step">
+                    <div class="step-number"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                    <h3>3. DISCUTEZ & ROULEZ</h3>
+                    <p>Chattez en temps réel, planifiez votre première sortie et prenez la route ensemble.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURES -->
     <section class="features" id="features">
-        <div class="reveal">
+        <div class="section-inner-wide reveal">
             <p class="section-label">Pourquoi RIDN</p>
             <h2 class="section-title">CRÉÉE PAR DES MOTARDS,<br>POUR DES MOTARDS</h2>
         </div>
-        <div class="features-grid">
-            <div class="feature-card reveal">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="section-inner-wide">
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h3>COMMUNAUTÉ 100% MOTO</h3>
+                    <p>Ici, tout le monde est passionné de deux roues. Toutes les catégories sont les bienvenues — sport, roadster, custom, enduro, trail, scooter. Plus besoin d'expliquer ta passion.</p>
                 </div>
-                <h3>COMMUNAUTÉ 100% MOTARDS</h3>
-                <p>Plus besoin d'expliquer ta passion. Tout le monde sur RIDN partage l'amour des deux roues. Matche avec quelqu'un qui comprend vraiment.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+                    <h3>MONTRE TA BÉCANE</h3>
+                    <p>Jusqu'à 6 photos, ton style de conduite, ta moto, tes plus beaux road trips. Ton profil, c'est ta vitrine — laisse ta vie sur deux roues parler d'elle-même.</p>
                 </div>
-                <h3>MONTRE TA BÉCANE</h3>
-                <p>Ton profil, c'est ta vitrine — ta moto, ton équipement, tes plus belles photos de road trip. Laisse ta vie sur deux roues parler d'elle-même.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                    <h3>FINI LE SMALL TALK</h3>
+                    <p>Ici, la conversation commence par ce qui compte — la route, les virages, et quelqu'un avec qui partager le voyage. Discutez, planifiez votre première sortie et prenez la route ensemble.</p>
                 </div>
-                <h3>DES VRAIES CONVERSATIONS</h3>
-                <p>Fini le small talk. Commence par ce qui compte — la route, le bruit du moteur, et quelqu'un avec qui partager le voyage.</p>
             </div>
         </div>
     </section>
 
-    <!-- TAGLINE -->
-    <section class="tagline-section reveal">
-        <h2 class="tagline-quote">TA PROCHAINE <span>HISTOIRE</span><br>COMMENCE SUR DEUX ROUES</h2>
-        <p class="tagline-sub">Gratuite. Deux roues, un match.</p>
+    <!-- 5. MID CTA -->
+    <section class="mid-cta reveal">
+        <h2 class="mid-cta-title">TA PROCHAINE <span>HISTOIRE</span><br>COMMENCE SUR DEUX ROUES</h2>
+        <p class="mid-cta-sub">Gratuite. Disponible maintenant. Deux roues, un match.</p>
+        <div class="hero-buttons">
+            <a href="https://apps.apple.com/fr/app/ridn/id6755940607" target="_blank" rel="noopener" class="btn-store apple">
+                <span class="store-text"><small>Télécharger sur l'</small><strong>App Store</strong></span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.onevra.ridn" target="_blank" rel="noopener" class="btn-store google">
+                <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
+            </a>
+        </div>
     </section>
 
-    <!-- CTA / DOWNLOAD -->
+    <!-- 6. FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="faq-inner">
+            <div class="reveal">
+                <p class="section-label">Questions fréquentes</p>
+                <h2 class="section-title">TOUT SAVOIR SUR RIDN</h2>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>RIDN est-elle gratuite ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, RIDN est 100% gratuite pour créer ton profil, swiper, matcher et discuter. Des options payantes sont disponibles pour aller plus loin, mais tout l'essentiel est gratuit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>RIDN est-elle disponible sur iPhone et Android ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui ! RIDN est disponible sur l'App Store (iOS 15.1 et plus) et le Google Play Store (Android). L'inscription prend moins de 2 minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Comment fonctionnent les rencontres sur RIDN ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Parcours les profils de motards près de chez toi, swipe à droite si tu es intéressé·e, à gauche pour passer. Quand deux personnes swipent à droite, c'est un match et vous pouvez discuter en temps réel !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FINAL CTA -->
     <section class="cta-section" id="download">
         <div class="cta-box reveal">
-            <img src="logo.png" alt="RIDN" class="cta-logo">
+            <img src="logo.png" alt="RIDN - Télécharger l'appli de rencontre motard" class="cta-logo">
             <h2>PRÊT·E À ROULER ?</h2>
-            <div class="cta-date">🏍️ DISPONIBLE LE 14 FÉVRIER 2025 — SAINT-VALENTIN</div>
-            <p>Bientôt disponible — liens à venir.</p>
-
+            <div class="cta-badge">🏍️ DISPONIBLE MAINTENANT — GRATUIT</div>
+            <p>Rejoins la communauté de motards qui cherchent l'amour sur deux roues.</p>
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/fr/app/ridn/id6755940607" target="_blank" rel="noopener" class="btn-store apple">
+                    <span class="store-text"><small>Télécharger sur l'</small><strong>App Store</strong></span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.onevra.ridn" target="_blank" rel="noopener" class="btn-store google">
+                    <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-brand">
-            <img src="logo.png" alt="RIDN">
+        <div class="footer-inner">
+            <div class="footer-brand"><img src="logo.png" alt="RIDN"></div>
+            <div class="footer-links">
+                <a href="https://ridnapp.com/privacy-policy.html" target="_blank" rel="noopener">Confidentialité</a>
+                <a href="https://ridnapp.com/terms-of-service.html" target="_blank" rel="noopener">CGU</a>
+                <a href="mailto:contact@ridnapp.com">Contact</a>
+                <a href="https://www.tiktok.com/@ridnapp" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://www.instagram.com/ridnapp" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
         </div>
-        <div class="footer-links">
-            <a href="https://ridnapp.com/privacy-policy.html" target="_blank">Politique de confidentialité</a>
-            <a href="https://ridnapp.com/terms-of-service.html" target="_blank">Conditions d'utilisation</a>
-            <a href="mailto:contact@ridnapp.com">Contact</a>
-            <a href="https://www.tiktok.com/@ridnapp?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
-            <a href="https://www.instagram.com/ridnapp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-        </div>
-        <p class="footer-copy">&copy; 2025 RIDN. Tous droits réservés. Fait avec ❤️ et de l'essence.</p>
+        <p class="footer-copy">&copy; 2025 RIDN — Onevra. Tous droits réservés. L'appli de rencontres pour motards.</p>
     </footer>
 
     <script>
@@ -898,6 +680,11 @@
             });
         }, { threshold: 0.12 });
         reveals.forEach(el => observer.observe(el));
+
+        function toggleFaq(el) {
+            const item = el.closest('.faq-item');
+            item.classList.toggle('open');
+        }
     </script>
 
 </body>
