@@ -1,483 +1,596 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - RIDN</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de Confidentialité — RIDN</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@700;900&display=swap');
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-            padding: 20px;
-        }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+  :root {
+    --noir: #1C1210;
+    --corail: #EF6B6B;
+    --creme: #FEF1EE;
+    --corail-clair: #FAD9D5;
+    --blanc: #FFFFFF;
+    --gris-texte: #4A3F3D;
+  }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #FF6B6B;
-        }
+  html { scroll-behavior: smooth; }
 
-        h1 {
-            font-size: 2.5em;
-            color: #0A0A0A;
-            margin-bottom: 10px;
-        }
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--noir);
+    background: var(--creme);
+  }
 
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
-        }
+  header {
+    background: var(--noir);
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-        .update-date {
-            color: #999;
-            font-style: italic;
-            margin-top: 10px;
-        }
+  .logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--blanc);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
 
-        h2 {
-            color: #0A0A0A;
-            font-size: 1.8em;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
-        }
+  .logo span { color: var(--corail); }
 
-        h3 {
-            color: #FF6B6B;
-            font-size: 1.3em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
+  .back-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--corail-clair);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+  .back-link:hover { color: var(--blanc); }
 
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 20px;
-        }
+  .hero {
+    background: var(--noir);
+    padding: 64px 48px 56px;
+    border-bottom: 2px solid var(--corail);
+  }
 
-        li {
-            margin-bottom: 10px;
-        }
+  .hero-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 16px;
+  }
 
-        strong {
-            color: #0A0A0A;
-        }
+  .hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 0.95;
+    color: var(--blanc);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+  }
 
-        .contact-box {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #FF6B6B;
-        }
+  .hero h1 em {
+    color: var(--corail);
+    font-style: normal;
+  }
 
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #ffc107;
-        }
+  .hero-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.06em;
+  }
 
-        .important {
-            background-color: #f8d7da;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #dc3545;
-        }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 72px 48px;
+  }
 
-        a {
-            color: #FF6B6B;
-            text-decoration: none;
-        }
+  .sommaire {
+    background: var(--blanc);
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin-bottom: 64px;
+    border-left: 3px solid var(--corail);
+  }
 
-        a:hover {
-            text-decoration: underline;
-        }
+  .sommaire-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 20px;
+  }
 
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 2px solid #f0f0f0;
-            color: #666;
-        }
+  .sommaire ol { list-style: none; counter-reset: sommaire; }
+  .sommaire li { counter-increment: sommaire; margin-bottom: 8px; }
+  .sommaire li::before {
+    content: counter(sommaire, decimal-leading-zero) " — ";
+    font-size: 12px;
+    color: var(--corail);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-right: 4px;
+  }
+  .sommaire a { color: var(--noir); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .sommaire a:hover { color: var(--corail); }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+  .section {
+    margin-bottom: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--corail-clair);
+  }
 
-            h1 {
-                font-size: 2em;
-            }
+  .section:last-child { border-bottom: none; margin-bottom: 0; }
 
-            h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  .section-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--noir);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .section h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--noir);
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    font-size: 15px;
+    color: var(--gris-texte);
+    margin-bottom: 14px;
+    max-width: 68ch;
+  }
+
+  .section ul, .section ol {
+    margin: 12px 0 16px 20px;
+  }
+
+  .section li {
+    font-size: 15px;
+    color: var(--gris-texte);
+    margin-bottom: 8px;
+    max-width: 68ch;
+  }
+
+  .highlight {
+    background: var(--corail-clair);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .highlight p {
+    color: var(--noir);
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: var(--blanc);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .data-table th {
+    background: var(--noir);
+    color: var(--blanc);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  .data-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--gris-texte);
+    border-bottom: 1px solid var(--corail-clair);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: var(--creme); }
+
+  .identity-card {
+    background: var(--blanc);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+
+  .identity-card table { width: 100%; border-collapse: collapse; }
+  .identity-card td {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--corail-clair);
+    vertical-align: top;
+  }
+  .identity-card td:first-child {
+    color: var(--corail);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 40%;
+    padding-right: 16px;
+  }
+  .identity-card tr:last-child td { border-bottom: none; }
+
+  .rights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .right-card {
+    background: var(--blanc);
+    border-radius: 12px;
+    padding: 20px;
+    border-top: 3px solid var(--corail);
+  }
+
+  .right-card strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--noir);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .right-card p {
+    font-size: 13px;
+    color: var(--gris-texte);
+    margin-bottom: 0;
+  }
+
+  footer {
+    background: var(--noir);
+    padding: 40px 48px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  footer a { color: var(--corail); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    header, .hero { padding: 20px 24px; }
+    .container { padding: 48px 24px; }
+    .rights-grid { grid-template-columns: 1fr; }
+    footer { padding: 32px 24px; }
+    .data-table { font-size: 12px; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏍️ RIDN</h1>
-            <p class="subtitle">Politique de Confidentialité</p>
-            <p class="update-date">Dernière mise à jour : 28 novembre 2025</p>
-        </header>
 
-        <section>
-            <h2>1. Introduction</h2>
-            <p>Bienvenue sur RIDN, l'application de rencontres dédiée aux passionnés de moto.</p>
-            <p>ONEVRA, représentée par Tom Revert (ci-après "nous", "notre" ou "RIDN"), accorde une grande importance à la protection de vos données personnelles et au respect de votre vie privée.</p>
-            <p>Cette Politique de Confidentialité décrit comment nous collectons, utilisons, partageons et protégeons vos informations personnelles lorsque vous utilisez notre application mobile RIDN.</p>
-            
-            <div class="contact-box">
-                <strong>Informations de contact :</strong>
-                <ul>
-                    <li>Email : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></li>
-                    <li>Site web : <a href="https://ridnapp.com">https://ridnapp.com</a></li>
-                    <li>Adresse : ONEVRA, 95300 Pontoise, France</li>
-                </ul>
-            </div>
-        </section>
+<header>
+  <a href="https://ridnapp.com" class="logo">RIDN</a>
+  <a href="https://ridnapp.com" class="back-link">← Retour</a>
+</header>
 
-        <section>
-            <h2>2. Données que nous collectons</h2>
-            
-            <h3>2.1 Données fournies directement par vous</h3>
-            <p>Lorsque vous créez un compte et utilisez RIDN, nous collectons les informations suivantes :</p>
-            
-            <p><strong>Informations de compte :</strong></p>
-            <ul>
-                <li>Nom et prénom</li>
-                <li>Adresse email</li>
-                <li>Date de naissance</li>
-                <li>Mot de passe (crypté)</li>
-            </ul>
+<div class="hero">
+  <p class="hero-label">Documents légaux</p>
+  <h1>Politique de<br><em>Confiden</em>tialité</h1>
+  <p class="hero-meta">Version 2.0 · En vigueur à compter du [DATE DE MISE EN LIGNE]</p>
+</div>
 
-            <p><strong>Informations de profil :</strong></p>
-            <ul>
-                <li>Photos de profil</li>
-                <li>Biographie</li>
-                <li>Informations sur votre moto (marque, modèle, type)</li>
-                <li>Ville de résidence</li>
-                <li>Préférences de recherche</li>
-            </ul>
+<div class="container">
 
-            <p><strong>Contenus générés :</strong></p>
-            <ul>
-                <li>Messages échangés via le chat</li>
-                <li>Actions sur l'application (swipe, likes, matches)</li>
-            </ul>
+  <div class="highlight">
+    <p>RIDN ne vend pas vos données. Vos données restent sur nos serveurs sécurisés et ne sont jamais cédées à des tiers à des fins commerciales ou publicitaires.</p>
+  </div>
 
-            <h3>2.2 Données collectées automatiquement</h3>
-            
-            <p><strong>Données techniques :</strong></p>
-            <ul>
-                <li>Adresse IP</li>
-                <li>Type d'appareil et système d'exploitation</li>
-                <li>Identifiant unique de l'appareil</li>
-                <li>Version de l'application</li>
-                <li>Données de navigation et d'utilisation</li>
-            </ul>
+  <!-- SOMMAIRE -->
+  <div class="sommaire" style="margin-top:40px;">
+    <p class="sommaire-title">Sommaire</p>
+    <ol>
+      <li><a href="#p1">Responsable du traitement</a></li>
+      <li><a href="#p2">Données collectées</a></li>
+      <li><a href="#p3">Finalités et bases légales</a></li>
+      <li><a href="#p4">Géolocalisation</a></li>
+      <li><a href="#p5">Durée de conservation</a></li>
+      <li><a href="#p6">Sous-traitants et destinataires</a></li>
+      <li><a href="#p7">Transferts hors UE</a></li>
+      <li><a href="#p8">Sécurité</a></li>
+      <li><a href="#p9">Vos droits</a></li>
+      <li><a href="#p10">Cookies et traceurs</a></li>
+      <li><a href="#p11">Mineurs</a></li>
+      <li><a href="#p12">Modifications</a></li>
+      <li><a href="#p13">Contact et réclamations</a></li>
+    </ol>
+  </div>
 
-            <p><strong>Données de localisation :</strong></p>
-            <ul>
-                <li>Ville déclarée par l'utilisateur (pas de géolocalisation GPS en Version 1.0)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>3. Comment nous utilisons vos données</h2>
-            <p>Nous utilisons vos données personnelles pour les finalités suivantes :</p>
-
-            <h3>3.1 Fourniture du service</h3>
-            <ul>
-                <li>Créer et gérer votre compte</li>
-                <li>Vous permettre de créer un profil et de le personnaliser</li>
-                <li>Afficher votre profil aux autres utilisateurs selon vos préférences</li>
-                <li>Faciliter les connexions et les matchs entre utilisateurs</li>
-                <li>Permettre la messagerie instantanée entre utilisateurs ayant matché</li>
-            </ul>
-
-            <h3>3.2 Amélioration du service</h3>
-            <ul>
-                <li>Analyser l'utilisation de l'application</li>
-                <li>Améliorer les fonctionnalités et l'expérience utilisateur</li>
-                <li>Développer de nouvelles fonctionnalités</li>
-            </ul>
-
-            <h3>3.3 Communication</h3>
-            <ul>
-                <li>Vous envoyer des notifications push (avec votre consentement)</li>
-                <li>Répondre à vos demandes de support</li>
-                <li>Vous informer des modifications de nos conditions d'utilisation</li>
-            </ul>
-
-            <h3>3.4 Sécurité et prévention de la fraude</h3>
-            <ul>
-                <li>Détecter et prévenir les abus et violations de nos conditions</li>
-                <li>Protéger la sécurité des utilisateurs</li>
-                <li>Vérifier l'authenticité des comptes</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>4. Base légale du traitement (RGPD)</h2>
-            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), nous traitons vos données sur les bases légales suivantes :</p>
-            
-            <p><strong>Exécution du contrat :</strong></p>
-            <ul>
-                <li>Fourniture des services de l'application RIDN</li>
-            </ul>
-
-            <p><strong>Consentement :</strong></p>
-            <ul>
-                <li>Envoi de notifications push</li>
-                <li>Utilisation de cookies et traceurs</li>
-            </ul>
-
-            <p><strong>Intérêt légitime :</strong></p>
-            <ul>
-                <li>Amélioration de nos services</li>
-                <li>Sécurité et prévention de la fraude</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>5. Partage de vos données</h2>
-
-            <h3>5.1 Avec d'autres utilisateurs</h3>
-            <p>Votre profil (photo, nom, âge, ville, informations moto, biographie) est visible par les autres utilisateurs de RIDN dans le cadre du fonctionnement normal de l'application.</p>
-            <p>Vos messages ne sont visibles que par vous et les personnes avec qui vous avez matché.</p>
-
-            <h3>5.2 Avec des prestataires de services</h3>
-            <p>Nous partageons vos données avec les prestataires suivants, uniquement dans la mesure nécessaire à la fourniture de nos services :</p>
-
-            <p><strong>Firebase (Google LLC) :</strong></p>
-            <ul>
-                <li>Authentification des utilisateurs</li>
-                <li>Stockage de la base de données (Firestore)</li>
-                <li>Hébergement des photos (Firebase Storage)</li>
-                <li>Localisation : États-Unis (mécanismes de transfert appropriés en place)</li>
-                <li>Politique de confidentialité : <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
-            </ul>
-
-            <p><strong>Expo (Expo Inc.) :</strong></p>
-            <ul>
-                <li>Notifications push</li>
-                <li>Infrastructure de développement</li>
-                <li>Localisation : États-Unis</li>
-                <li>Politique de confidentialité : <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-            </ul>
-
-            <p><strong>RevenueCat (sera activé dans une version ultérieure) :</strong></p>
-            <ul>
-                <li>Gestion des abonnements in-app</li>
-                <li>Localisation : États-Unis</li>
-                <li>Politique de confidentialité : <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
-            </ul>
-
-            <h3>5.3 Obligations légales</h3>
-            <p>Nous pouvons divulguer vos informations si nous y sommes légalement obligés, ou si nous estimons de bonne foi qu'une telle action est nécessaire pour :</p>
-            <ul>
-                <li>Se conformer à une obligation légale</li>
-                <li>Protéger nos droits ou notre propriété</li>
-                <li>Prévenir une fraude ou un abus</li>
-                <li>Protéger la sécurité des utilisateurs</li>
-            </ul>
-
-            <h3>5.4 Pas de vente de données</h3>
-            <div class="important">
-                <strong>Important :</strong> Nous ne vendons jamais vos données personnelles à des tiers.
-            </div>
-        </section>
-
-        <section>
-            <h2>6. Transferts internationaux de données</h2>
-            <p>Certains de nos prestataires de services sont situés en dehors de l'Espace Économique Européen (EEE), notamment aux États-Unis.</p>
-            <p>Nous nous assurons que ces transferts sont effectués conformément au RGPD, en utilisant :</p>
-            <ul>
-                <li>Les clauses contractuelles types de la Commission européenne</li>
-                <li>Le Data Privacy Framework UE-États-Unis (le cas échéant)</li>
-                <li>D'autres mécanismes de transfert appropriés</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>7. Conservation des données</h2>
-            <p>Nous conservons vos données personnelles aussi longtemps que nécessaire pour les finalités décrites dans cette politique :</p>
-
-            <p><strong>Compte actif :</strong></p>
-            <ul>
-                <li>Vos données sont conservées tant que votre compte est actif</li>
-            </ul>
-
-            <p><strong>Après suppression du compte :</strong></p>
-            <ul>
-                <li>Vos données de profil sont supprimées immédiatement</li>
-                <li>Les messages peuvent être conservés pendant 30 jours pour des raisons de sécurité</li>
-                <li>Certaines données techniques peuvent être conservées sous forme anonymisée à des fins statistiques</li>
-            </ul>
-
-            <p><strong>Obligations légales :</strong></p>
-            <ul>
-                <li>Certaines données peuvent être conservées plus longtemps si la loi l'exige (ex: données de facturation pour les obligations comptables)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>8. Vos droits (RGPD)</h2>
-            <p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p>
-
-            <h3>8.1 Droit d'accès</h3>
-            <p>Vous avez le droit d'obtenir la confirmation que nous traitons vos données et d'en obtenir une copie.</p>
-
-            <h3>8.2 Droit de rectification</h3>
-            <p>Vous pouvez demander la correction de vos données inexactes ou incomplètes.</p>
-
-            <h3>8.3 Droit à l'effacement ("droit à l'oubli")</h3>
-            <p>Vous pouvez demander la suppression de vos données dans certaines conditions.</p>
-
-            <h3>8.4 Droit à la limitation du traitement</h3>
-            <p>Vous pouvez demander de limiter le traitement de vos données dans certains cas.</p>
-
-            <h3>8.5 Droit à la portabilité</h3>
-            <p>Vous avez le droit de recevoir vos données dans un format structuré et de les transmettre à un autre responsable de traitement.</p>
-
-            <h3>8.6 Droit d'opposition</h3>
-            <p>Vous pouvez vous opposer au traitement de vos données pour des raisons tenant à votre situation particulière.</p>
-
-            <h3>8.7 Droit de retirer votre consentement</h3>
-            <p>Lorsque le traitement est fondé sur votre consentement, vous pouvez le retirer à tout moment.</p>
-
-            <h3>8.8 Droit d'introduire une réclamation</h3>
-            <p>Vous avez le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) :</p>
-            <ul>
-                <li>Site web : <a href="https://www.cnil.fr" target="_blank">https://www.cnil.fr</a></li>
-                <li>Adresse : 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France</li>
-            </ul>
-
-            <div class="highlight">
-                <h3>Comment exercer vos droits</h3>
-                <p>Pour exercer vos droits, contactez-nous à l'adresse : <strong><a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></strong></p>
-                <p>Nous répondrons à votre demande dans un délai d'un mois maximum.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>9. Sécurité de vos données</h2>
-            <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre :</p>
-            <ul>
-                <li>L'accès non autorisé</li>
-                <li>La divulgation</li>
-                <li>La modification</li>
-                <li>La destruction</li>
-            </ul>
-
-            <p><strong>Mesures de sécurité :</strong></p>
-            <ul>
-                <li>Chiffrement des mots de passe</li>
-                <li>Connexions sécurisées (HTTPS/SSL)</li>
-                <li>Contrôles d'accès stricts aux données</li>
-                <li>Surveillance et détection des incidents de sécurité</li>
-                <li>Mises à jour régulières de sécurité</li>
-            </ul>
-
-            <p>Toutefois, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée. Nous ne pouvons garantir une sécurité absolue.</p>
-        </section>
-
-        <section>
-            <h2>10. Données des mineurs</h2>
-            <div class="important">
-                <p><strong>RIDN est destiné aux personnes âgées de 18 ans et plus.</strong></p>
-                <p>Nous ne collectons pas sciemment de données personnelles auprès de mineurs. Si nous découvrons qu'un mineur nous a fourni des données personnelles, nous supprimerons immédiatement ces informations.</p>
-                <p>Si vous pensez qu'un mineur nous a fourni des données personnelles, contactez-nous à : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>11. Cookies et technologies similaires</h2>
-            
-            <h3>11.1 Utilisation des cookies</h3>
-            <p>RIDN utilise des cookies et technologies similaires pour :</p>
-            <ul>
-                <li>Maintenir votre session connectée</li>
-                <li>Analyser l'utilisation de l'application</li>
-                <li>Améliorer les performances</li>
-            </ul>
-
-            <h3>11.2 Gestion des cookies</h3>
-            <p>Vous pouvez gérer vos préférences concernant les cookies directement dans les paramètres de l'application ou de votre appareil.</p>
-        </section>
-
-        <section>
-            <h2>12. Liens vers des sites tiers</h2>
-            <p>Notre application peut contenir des liens vers des sites web ou services tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites tiers.</p>
-            <p>Nous vous encourageons à lire les politiques de confidentialité de chaque site que vous visitez.</p>
-        </section>
-
-        <section>
-            <h2>13. Modifications de cette politique</h2>
-            <p>Nous pouvons modifier cette Politique de Confidentialité de temps à autre. Nous vous informerons de toute modification importante via :</p>
-            <ul>
-                <li>Une notification dans l'application</li>
-                <li>Un email à l'adresse associée à votre compte</li>
-            </ul>
-            <p>La date de "Dernière mise à jour" en haut de cette politique indique la date de la dernière révision.</p>
-            <p>Nous vous encourageons à consulter régulièrement cette politique pour rester informé de la manière dont nous protégeons vos données.</p>
-        </section>
-
-        <section>
-            <h2>14. Contact</h2>
-            <p>Pour toute question concernant cette Politique de Confidentialité ou le traitement de vos données personnelles, contactez-nous :</p>
-            
-            <div class="contact-box">
-                <p><strong>Email :</strong> <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-                <p><strong>Adresse postale :</strong><br>
-                ONEVRA<br>
-                Tom Revert<br>
-                95300 Pontoise<br>
-                France</p>
-                <p><strong>Site web :</strong> <a href="https://ridnapp.com">https://ridnapp.com</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>15. Délégué à la Protection des Données</h2>
-            <p>Pour l'instant, compte tenu de la taille de notre structure, nous n'avons pas désigné de Délégué à la Protection des Données (DPO). Toutes les demandes relatives à la protection des données peuvent être adressées directement à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
-        </section>
-
-        <footer>
-            <p><strong>Merci d'utiliser RIDN ! 🏍️</strong></p>
-            <p>Cette Politique de Confidentialité a été rédigée pour être conforme au Règlement Général sur la Protection des Données (RGPD - UE 2016/679) et à la loi française Informatique et Libertés.</p>
-            <p style="margin-top: 20px;">© 2025 ONEVRA - Tous droits réservés</p>
-        </footer>
+  <!-- ARTICLE 1 -->
+  <div class="section" id="p1">
+    <p class="section-number">Article 01</p>
+    <h2>Responsable du traitement</h2>
+    <div class="identity-card">
+      <table>
+        <tr><td>Responsable</td><td>Tom Revert – Entrepreneur Individuel (EI), exerçant sous le nom commercial ONEVRA</td></tr>
+        <tr><td>Adresse</td><td>61 rue de Lyon, 75012 Paris, France</td></tr>
+        <tr><td>SIRET</td><td>[NOUVEAU SIRET À INSÉRER]</td></tr>
+        <tr><td>Email</td><td><a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></td></tr>
+        <tr><td>Téléphone</td><td>07 69 08 16 14</td></tr>
+      </table>
     </div>
+  </div>
+
+  <!-- ARTICLE 2 -->
+  <div class="section" id="p2">
+    <p class="section-number">Article 02</p>
+    <h2>Données collectées</h2>
+    <p>RIDN collecte les catégories de données suivantes :</p>
+
+    <h3>Données fournies par l'utilisateur</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Donnée</th><th>Finalité</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Prénom, date de naissance</td><td>Création et affichage du profil</td></tr>
+        <tr><td>Photos de profil</td><td>Identification visuelle dans l'application</td></tr>
+        <tr><td>Type et marque de moto</td><td>Affinités et mise en relation</td></tr>
+        <tr><td>Bio et description libre</td><td>Personnalisation du profil</td></tr>
+        <tr><td>Numéro de téléphone ou email</td><td>Authentification et sécurité du compte</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Données collectées automatiquement</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Donnée</th><th>Finalité</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Localisation géographique approximative (geohash)</td><td>Découverte de riders à proximité</td></tr>
+        <tr><td>Adresse IP</td><td>Sécurité, prévention de la fraude, obligation légale de conservation</td></tr>
+        <tr><td>Identifiant de l'appareil</td><td>Authentification et notifications push</td></tr>
+        <tr><td>Données d'utilisation (interactions, swipes, matches)</td><td>Fonctionnement du service et amélioration</td></tr>
+        <tr><td>Rapports d'erreurs techniques</td><td>Stabilité et débogage de l'application (via Sentry)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Données de paiement</h3>
+    <p>RIDN ne collecte ni ne stocke aucune donnée bancaire. Les paiements sont intégralement gérés par Apple (App Store) ou Google (Google Play). Seul le statut de l'abonnement (actif/inactif) est synchronisé avec nos serveurs via RevenueCat.</p>
+  </div>
+
+  <!-- ARTICLE 3 -->
+  <div class="section" id="p3">
+    <p class="section-number">Article 03</p>
+    <h2>Finalités et bases légales</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Finalité</th><th>Base légale (RGPD)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Création et gestion du compte</td><td>Art. 6.1.b — Exécution du contrat</td></tr>
+        <tr><td>Mise en relation entre utilisateurs</td><td>Art. 6.1.b — Exécution du contrat</td></tr>
+        <tr><td>Géolocalisation pour la découverte</td><td>Art. 6.1.a — Consentement explicite</td></tr>
+        <tr><td>Sécurité et prévention de la fraude</td><td>Art. 6.1.f — Intérêt légitime</td></tr>
+        <tr><td>Conservation des logs de connexion</td><td>Art. 6.1.c — Obligation légale (décret 2021-1362)</td></tr>
+        <tr><td>Gestion des abonnements premium</td><td>Art. 6.1.b — Exécution du contrat</td></tr>
+        <tr><td>Amélioration du service</td><td>Art. 6.1.f — Intérêt légitime</td></tr>
+        <tr><td>Rapports d'erreurs (Sentry)</td><td>Art. 6.1.f — Intérêt légitime</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ARTICLE 4 -->
+  <div class="section" id="p4">
+    <p class="section-number">Article 04</p>
+    <h2>Géolocalisation</h2>
+    <p>RIDN utilise la géolocalisation de votre appareil pour vous permettre de découvrir des riders à proximité. Cette fonctionnalité repose sur une technologie de geohash (zone géographique approximative) et non sur des coordonnées GPS précises.</p>
+    <div class="highlight">
+      <p>Votre position exacte n'est jamais visible par les autres utilisateurs. Seule une zone approximative est utilisée pour calculer la distance.</p>
+    </div>
+    <p>La géolocalisation est activée uniquement avec votre consentement explicite, recueilli lors de l'installation de l'application. Vous pouvez retirer ce consentement à tout moment depuis les paramètres de votre appareil (Réglages → RIDN → Localisation). Le retrait de ce consentement désactivera la fonctionnalité de découverte par proximité.</p>
+    <p>La géolocalisation déclarée à la CNIL concerne les données de localisation approximative (geohash) traitées à des fins de mise en relation entre utilisateurs.</p>
+  </div>
+
+  <!-- ARTICLE 5 -->
+  <div class="section" id="p5">
+    <p class="section-number">Article 05</p>
+    <h2>Durée de conservation</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Catégorie de données</th><th>Durée de conservation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Données de profil actif</td><td>Durée d'activité du compte</td></tr>
+        <tr><td>Données de profil après suppression du compte</td><td>Supprimées sous 30 jours, sauf obligation légale</td></tr>
+        <tr><td>Données de connexion (IP, logs)</td><td>1 an — obligation légale (décret 2021-1362 et injonction en vigueur)</td></tr>
+        <tr><td>Données de facturation et abonnement</td><td>10 ans — obligation comptable</td></tr>
+        <tr><td>Identifiant technique de prévention des abus</td><td>3 ans après suspension du compte concerné</td></tr>
+        <tr><td>Rapports d'erreurs Sentry</td><td>90 jours</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ARTICLE 6 -->
+  <div class="section" id="p6">
+    <p class="section-number">Article 06</p>
+    <h2>Sous-traitants et destinataires</h2>
+    <p>RIDN fait appel aux sous-traitants suivants dans le cadre de l'exploitation du service :</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Sous-traitant</th><th>Rôle</th><th>Localisation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Google Firebase (Firestore, RTDB, Storage, Cloud Functions)</td><td>Hébergement des données, base de données, stockage des médias</td><td>UE / USA</td></tr>
+        <tr><td>RevenueCat</td><td>Gestion des abonnements et entitlements</td><td>USA</td></tr>
+        <tr><td>Sentry</td><td>Collecte de rapports d'erreurs techniques</td><td>USA</td></tr>
+        <tr><td>Apple Inc.</td><td>Distribution de l'application et paiements in-app (iOS)</td><td>USA</td></tr>
+        <tr><td>Google LLC</td><td>Distribution de l'application et paiements in-app (Android)</td><td>USA</td></tr>
+        <tr><td>Expo (EAS)</td><td>Builds et mises à jour de l'application</td><td>USA</td></tr>
+      </tbody>
+    </table>
+    <p>Ces sous-traitants agissent sur instruction de RIDN et sont liés par des engagements contractuels de protection des données conformes au RGPD.</p>
+    <p>Vos données personnelles ne sont jamais vendues, louées ou cédées à des tiers à des fins commerciales ou publicitaires.</p>
+  </div>
+
+  <!-- ARTICLE 7 -->
+  <div class="section" id="p7">
+    <p class="section-number">Article 07</p>
+    <h2>Transferts hors UE</h2>
+    <p>Certains de nos sous-traitants sont établis aux États-Unis. Ces transferts sont encadrés par les garanties appropriées prévues par le RGPD :</p>
+    <ul>
+      <li>Clauses contractuelles types (CCT) de la Commission européenne ;</li>
+      <li>Décision d'adéquation EU-US Data Privacy Framework, lorsqu'applicable.</li>
+    </ul>
+    <p>Vous pouvez obtenir une copie de ces garanties en écrivant à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+  </div>
+
+  <!-- ARTICLE 8 -->
+  <div class="section" id="p8">
+    <p class="section-number">Article 08</p>
+    <h2>Sécurité</h2>
+    <p>RIDN met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte, destruction ou altération, notamment :</p>
+    <ul>
+      <li>chiffrement des données en transit (HTTPS/TLS) ;</li>
+      <li>règles d'accès Firestore restrictives par utilisateur authentifié ;</li>
+      <li>authentification sécurisée via Firebase Auth ;</li>
+      <li>surveillance des erreurs et anomalies via Sentry ;</li>
+      <li>accès aux données de production limité au seul responsable de traitement.</li>
+    </ul>
+    <p>En cas de violation de données susceptible d'engendrer un risque pour vos droits et libertés, vous serez notifié dans les délais prévus par le RGPD (article 34).</p>
+  </div>
+
+  <!-- ARTICLE 9 -->
+  <div class="section" id="p9">
+    <p class="section-number">Article 09</p>
+    <h2>Vos droits</h2>
+    <p>Conformément au RGPD et à la loi Informatique et Libertés, vous disposez des droits suivants sur vos données personnelles :</p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <strong>Accès</strong>
+        <p>Obtenir une copie de vos données personnelles traitées par RIDN.</p>
+      </div>
+      <div class="right-card">
+        <strong>Rectification</strong>
+        <p>Corriger des données inexactes ou incomplètes vous concernant.</p>
+      </div>
+      <div class="right-card">
+        <strong>Effacement</strong>
+        <p>Demander la suppression de vos données, dans les limites des obligations légales de conservation.</p>
+      </div>
+      <div class="right-card">
+        <strong>Portabilité</strong>
+        <p>Recevoir vos données dans un format structuré et lisible par machine.</p>
+      </div>
+      <div class="right-card">
+        <strong>Opposition</strong>
+        <p>Vous opposer au traitement fondé sur l'intérêt légitime.</p>
+      </div>
+      <div class="right-card">
+        <strong>Limitation</strong>
+        <p>Demander la suspension temporaire d'un traitement contesté.</p>
+      </div>
+    </div>
+
+    <p>Ces droits s'exercent par email à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>, avec indication de votre identité. Une réponse vous sera apportée dans un délai maximum d'un mois.</p>
+    <p>Le droit de retrait du consentement à la géolocalisation s'exerce directement depuis les paramètres de votre appareil.</p>
+    <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a> — 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.</p>
+  </div>
+
+  <!-- ARTICLE 10 -->
+  <div class="section" id="p10">
+    <p class="section-number">Article 10</p>
+    <h2>Cookies et traceurs</h2>
+    <h3>Application mobile</h3>
+    <p>L'application RIDN n'utilise pas de cookies. Les données techniques nécessaires au fonctionnement de l'application (identifiant de session, token d'authentification) sont stockées localement sur votre appareil via les mécanismes natifs iOS et Android, et ne sont pas partagées avec des tiers à des fins publicitaires.</p>
+    <h3>Site web ridnapp.com</h3>
+    <p>Le site ridnapp.com n'utilise pas de cookies analytiques, de traceurs publicitaires ni de pixels de suivi. Aucun bandeau de consentement aux cookies n'est donc requis.</p>
+  </div>
+
+  <!-- ARTICLE 11 -->
+  <div class="section" id="p11">
+    <p class="section-number">Article 11</p>
+    <h2>Mineurs</h2>
+    <p>RIDN est strictement réservée aux personnes âgées de 18 ans et plus. Aucune donnée n'est collectée sciemment auprès de mineurs. Si nous avons connaissance qu'un compte appartient à un mineur, ce compte est immédiatement supprimé et les données associées effacées.</p>
+    <p>Si vous pensez qu'un mineur utilise RIDN, signalez-le à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+  </div>
+
+  <!-- ARTICLE 12 -->
+  <div class="section" id="p12">
+    <p class="section-number">Article 12</p>
+    <h2>Modifications</h2>
+    <p>La présente politique de confidentialité peut être mise à jour pour refléter les évolutions du service ou de la réglementation applicable. En cas de modification substantielle, vous serez informé par notification dans l'application ou par email, avec un préavis de 15 jours.</p>
+    <p>La date de dernière mise à jour est indiquée en haut du présent document.</p>
+  </div>
+
+  <!-- ARTICLE 13 -->
+  <div class="section" id="p13">
+    <p class="section-number">Article 13</p>
+    <h2>Contact et réclamations</h2>
+    <p>Pour toute question relative au traitement de vos données personnelles ou pour exercer vos droits :</p>
+    <div class="identity-card">
+      <table>
+        <tr><td>Email</td><td><a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></td></tr>
+        <tr><td>Téléphone</td><td>07 69 08 16 14</td></tr>
+        <tr><td>Courrier</td><td>Tom Revert – ONEVRA, 61 rue de Lyon, 75012 Paris</td></tr>
+        <tr><td>Délai de réponse</td><td>1 mois maximum</td></tr>
+      </table>
+    </div>
+    <p>En cas de litige non résolu, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a>) ou le médiateur de la consommation CM2C (<a href="https://www.cm2c.net" target="_blank">www.cm2c.net</a>).</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>RIDN · Tom Revert EI · 61 rue de Lyon, 75012 Paris</p>
+  <p><a href="https://ridnapp.com/terms-of-service.html">Conditions Générales d'Utilisation</a> · <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
+  <p style="margin-top:16px;">© 2026 ONEVRA — Tous droits réservés</p>
+</footer>
+
 </body>
 </html>
