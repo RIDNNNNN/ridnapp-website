@@ -1,581 +1,530 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions Générales d'Utilisation - RIDN</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales d'Utilisation — RIDN</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@700;900&display=swap');
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-            padding: 20px;
-        }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+  :root {
+    --noir: #1C1210;
+    --corail: #EF6B6B;
+    --creme: #FEF1EE;
+    --corail-clair: #FAD9D5;
+    --blanc: #FFFFFF;
+    --gris-texte: #4A3F3D;
+  }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #FF6B6B;
-        }
+  html { scroll-behavior: smooth; }
 
-        h1 {
-            font-size: 2.5em;
-            color: #0A0A0A;
-            margin-bottom: 10px;
-        }
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--noir);
+    background: var(--creme);
+  }
 
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
-        }
+  /* HEADER */
+  header {
+    background: var(--noir);
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-        .update-date {
-            color: #999;
-            font-style: italic;
-            margin-top: 10px;
-        }
+  .logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--blanc);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
 
-        h2 {
-            color: #0A0A0A;
-            font-size: 1.8em;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
-        }
+  .logo span { color: var(--corail); }
 
-        h3 {
-            color: #FF6B6B;
-            font-size: 1.3em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
+  .back-link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--corail-clair);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+  .back-link:hover { color: var(--blanc); }
 
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 20px;
-        }
+  /* HERO */
+  .hero {
+    background: var(--noir);
+    padding: 64px 48px 56px;
+    border-bottom: 2px solid var(--corail);
+  }
 
-        li {
-            margin-bottom: 10px;
-        }
+  .hero-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 16px;
+  }
 
-        strong {
-            color: #0A0A0A;
-        }
+  .hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(48px, 8vw, 80px);
+    line-height: 0.95;
+    color: var(--blanc);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+  }
 
-        .contact-box {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #FF6B6B;
-        }
+  .hero h1 em {
+    color: var(--corail);
+    font-style: normal;
+  }
 
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #ffc107;
-        }
+  .hero-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.06em;
+  }
 
-        .important {
-            background-color: #f8d7da;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #dc3545;
-        }
+  /* LAYOUT */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 72px 48px;
+  }
 
-        .warning {
-            background-color: #d1ecf1;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #0c5460;
-        }
+  /* SOMMAIRE */
+  .sommaire {
+    background: var(--blanc);
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin-bottom: 64px;
+    border-left: 3px solid var(--corail);
+  }
 
-        a {
-            color: #FF6B6B;
-            text-decoration: none;
-        }
+  .sommaire-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 20px;
+  }
 
-        a:hover {
-            text-decoration: underline;
-        }
+  .sommaire ol {
+    list-style: none;
+    counter-reset: sommaire;
+  }
 
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 2px solid #f0f0f0;
-            color: #666;
-        }
+  .sommaire li {
+    counter-increment: sommaire;
+    margin-bottom: 8px;
+  }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+  .sommaire li::before {
+    content: counter(sommaire, decimal-leading-zero) " — ";
+    font-size: 12px;
+    color: var(--corail);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-right: 4px;
+  }
 
-            h1 {
-                font-size: 2em;
-            }
+  .sommaire a {
+    color: var(--noir);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-            h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  .sommaire a:hover { color: var(--corail); }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--corail-clair);
+  }
+
+  .section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .section-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--corail);
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--noir);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .section h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--noir);
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    font-size: 15px;
+    color: var(--gris-texte);
+    margin-bottom: 14px;
+    max-width: 68ch;
+  }
+
+  .section ul, .section ol {
+    margin: 12px 0 16px 20px;
+  }
+
+  .section li {
+    font-size: 15px;
+    color: var(--gris-texte);
+    margin-bottom: 8px;
+    max-width: 68ch;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight {
+    background: var(--corail-clair);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .highlight p {
+    color: var(--noir);
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  /* IDENTITÉ */
+  .identity-card {
+    background: var(--blanc);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+
+  .identity-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .identity-card td {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--corail-clair);
+    vertical-align: top;
+  }
+
+  .identity-card td:first-child {
+    color: var(--corail);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 40%;
+    padding-right: 16px;
+  }
+
+  .identity-card tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--noir);
+    padding: 40px 48px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  footer a {
+    color: var(--corail);
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    header, .hero { padding: 20px 24px; }
+    .container { padding: 48px 24px; }
+    footer { padding: 32px 24px; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏍️ RIDN</h1>
-            <p class="subtitle">Conditions Générales d'Utilisation</p>
-            <p class="update-date">Dernière mise à jour : 28 novembre 2025</p>
-        </header>
 
-        <section>
-            <h2>1. Introduction et acceptation des conditions</h2>
-            <p>Bienvenue sur RIDN, l'application de rencontres pour passionnés de moto.</p>
-            <p>Les présentes Conditions Générales d'Utilisation (ci-après "CGU") régissent votre accès et votre utilisation de l'application mobile RIDN, éditée par ONEVRA, représentée par Tom Revert, entrepreneur individuel dont le siège social est situé à Pontoise (95300), France.</p>
-            
-            <div class="important">
-                <p><strong>En créant un compte et en utilisant RIDN, vous acceptez sans réserve les présentes CGU.</strong></p>
-                <p>Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser l'application.</p>
-            </div>
+<header>
+  <a href="https://ridnapp.com" class="logo">RIDN</a>
+  <a href="https://ridnapp.com" class="back-link">← Retour</a>
+</header>
 
-            <div class="contact-box">
-                <strong>Informations de contact :</strong>
-                <ul>
-                    <li>Email : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></li>
-                    <li>Site web : <a href="https://ridnapp.com">https://ridnapp.com</a></li>
-                    <li>Adresse : ONEVRA, 95300 Pontoise, France</li>
-                </ul>
-            </div>
-        </section>
+<div class="hero">
+  <p class="hero-label">Documents légaux</p>
+  <h1>Conditions<br><em>Générales</em><br>d'Utilisation</h1>
+  <p class="hero-meta">Version 2.0 · En vigueur à compter du 2 septembre 2026</p>
+</div>
 
-        <section>
-            <h2>2. Définitions</h2>
-            <ul>
-                <li><strong>Application</strong> : désigne l'application mobile RIDN disponible sur iOS et Android.</li>
-                <li><strong>Utilisateur</strong> : toute personne physique majeure ayant créé un compte sur RIDN.</li>
-                <li><strong>Contenu</strong> : ensemble des textes, images, photos, vidéos, messages et toute autre information publiée par les Utilisateurs sur l'Application.</li>
-                <li><strong>Match</strong> : connexion établie entre deux Utilisateurs qui se sont mutuellement likés.</li>
-                <li><strong>Profil</strong> : page personnelle d'un Utilisateur contenant ses informations et photos.</li>
-                <li><strong>Services</strong> : ensemble des fonctionnalités proposées par RIDN.</li>
-            </ul>
-        </section>
+<div class="container">
 
-        <section>
-            <h2>3. Objet de l'application</h2>
-            <p>RIDN est une application de rencontres destinée aux passionnés de moto. Elle permet aux Utilisateurs de :</p>
-            <ul>
-                <li>Créer un profil personnalisé</li>
-                <li>Découvrir d'autres profils de motards</li>
-                <li>Interagir avec d'autres Utilisateurs (swipe, likes, super likes)</li>
-                <li>Établir des connexions (matches)</li>
-                <li>Échanger des messages avec leurs matches</li>
-                <li>Accéder à des fonctionnalités premium (versions futures)</li>
-            </ul>
-            
-            <div class="warning">
-                <p><strong>Important :</strong> RIDN est un service de mise en relation. Nous ne garantissons aucun résultat en termes de rencontres ou de relations.</p>
-            </div>
-        </section>
+  <!-- SOMMAIRE -->
+  <div class="sommaire">
+    <p class="sommaire-title">Sommaire</p>
+    <ol>
+      <li><a href="#s1">Éditeur</a></li>
+      <li><a href="#s2">Objet et champ d'application</a></li>
+      <li><a href="#s3">Accès au service</a></li>
+      <li><a href="#s4">Inscription et compte</a></li>
+      <li><a href="#s5">Contenu utilisateur</a></li>
+      <li><a href="#s6">Offres premium et paiements</a></li>
+      <li><a href="#s7">Comportements prohibés</a></li>
+      <li><a href="#s8">Suspension et résiliation</a></li>
+      <li><a href="#s9">Signalement et modération</a></li>
+      <li><a href="#s10">Responsabilité</a></li>
+      <li><a href="#s11">Propriété intellectuelle</a></li>
+      <li><a href="#s12">Données personnelles</a></li>
+      <li><a href="#s13">Médiation et litiges</a></li>
+      <li><a href="#s14">Modifications des CGU</a></li>
+      <li><a href="#s15">Droit applicable</a></li>
+    </ol>
+  </div>
 
-        <section>
-            <h2>4. Conditions d'accès et inscription</h2>
-
-            <h3>4.1 Âge minimum</h3>
-            <div class="important">
-                <p><strong>L'utilisation de RIDN est strictement réservée aux personnes âgées de 18 ans et plus.</strong></p>
-                <p>En créant un compte, vous déclarez et garantissez avoir au moins 18 ans.</p>
-            </div>
-
-            <h3>4.2 Création du compte</h3>
-            <p>Pour utiliser RIDN, vous devez :</p>
-            <ol>
-                <li>Télécharger l'application depuis l'App Store (iOS) ou Google Play Store (Android)</li>
-                <li>Créer un compte en fournissant une adresse email valide</li>
-                <li>Choisir un mot de passe sécurisé</li>
-                <li>Compléter votre profil avec des informations véridiques</li>
-            </ol>
-
-            <h3>4.3 Informations exactes</h3>
-            <p>Vous vous engagez à fournir des informations exactes, à jour et complètes lors de votre inscription et à maintenir l'exactitude de ces informations.</p>
-            
-            <p><strong>Vous ne devez pas :</strong></p>
-            <ul>
-                <li>Usurper l'identité d'une autre personne</li>
-                <li>Créer un faux profil</li>
-                <li>Fournir de fausses informations</li>
-                <li>Créer plusieurs comptes</li>
-            </ul>
-
-            <h3>4.4 Sécurité du compte</h3>
-            <p>Vous êtes responsable de la confidentialité de vos identifiants de connexion. Vous vous engagez à :</p>
-            <ul>
-                <li>Conserver vos identifiants de manière confidentielle</li>
-                <li>Ne pas partager votre compte avec d'autres personnes</li>
-                <li>Nous informer immédiatement de toute utilisation non autorisée de votre compte</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>5. Utilisation de l'application</h2>
-
-            <h3>5.1 Usage autorisé</h3>
-            <p>Vous pouvez utiliser RIDN uniquement pour :</p>
-            <ul>
-                <li>Créer un profil personnel authentique</li>
-                <li>Découvrir et rencontrer d'autres passionnés de moto</li>
-                <li>Communiquer avec vos matches de manière respectueuse</li>
-                <li>Partager des informations sur votre passion pour la moto</li>
-            </ul>
-
-            <h3>5.2 Comportements interdits</h3>
-            
-            <p><strong>Contenus interdits :</strong></p>
-            <ul>
-                <li>Publier du contenu illégal, violent, haineux, discriminatoire ou pornographique</li>
-                <li>Publier du contenu portant atteinte à la vie privée ou aux droits d'autrui</li>
-                <li>Publier du spam, de la publicité non sollicitée ou du contenu commercial</li>
-                <li>Publier du contenu protégé par des droits d'auteur sans autorisation</li>
-            </ul>
-
-            <p><strong>Comportements interdits :</strong></p>
-            <ul>
-                <li>Harceler, menacer, intimider ou insulter d'autres Utilisateurs</li>
-                <li>Usurper l'identité d'une personne ou d'une entité</li>
-                <li>Solliciter de l'argent ou des informations personnelles sensibles</li>
-                <li>Utiliser l'Application à des fins commerciales sans notre autorisation</li>
-                <li>Utiliser des robots, scripts ou systèmes automatisés</li>
-                <li>Tenter d'accéder de manière non autorisée aux systèmes de RIDN</li>
-                <li>Collecter des informations sur d'autres Utilisateurs à des fins non autorisées</li>
-            </ul>
-
-            <div class="important">
-                <p><strong>Nous nous réservons le droit de supprimer tout contenu et de suspendre ou résilier tout compte violant ces règles, sans préavis et sans remboursement.</strong></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>6. Contenu publié par les Utilisateurs</h2>
-
-            <h3>6.1 Responsabilité du contenu</h3>
-            <p>Vous êtes seul responsable du contenu que vous publiez sur RIDN, y compris :</p>
-            <ul>
-                <li>Vos photos de profil</li>
-                <li>Votre biographie</li>
-                <li>Vos messages</li>
-                <li>Toute autre information partagée</li>
-            </ul>
-
-            <h3>6.2 Licence accordée à RIDN</h3>
-            <p>En publiant du contenu sur RIDN, vous nous accordez une licence mondiale, non exclusive, gratuite et transférable pour :</p>
-            <ul>
-                <li>Afficher votre contenu aux autres Utilisateurs</li>
-                <li>Stocker et traiter votre contenu</li>
-                <li>Améliorer nos services</li>
-            </ul>
-            <p>Cette licence prend fin lorsque vous supprimez votre contenu ou votre compte, sauf si le contenu a été partagé avec d'autres Utilisateurs et qu'ils ne l'ont pas supprimé.</p>
-
-            <h3>6.3 Modération</h3>
-            <p>Nous nous réservons le droit (mais n'avons pas l'obligation) de :</p>
-            <ul>
-                <li>Examiner, modérer ou supprimer tout contenu</li>
-                <li>Surveiller l'utilisation de l'Application</li>
-                <li>Prendre des mesures contre les violations des présentes CGU</li>
-            </ul>
-            <p>Nous ne sommes pas responsables du contenu publié par les Utilisateurs.</p>
-        </section>
-
-        <section>
-            <h2>7. Propriété intellectuelle</h2>
-
-            <h3>7.1 Droits de RIDN</h3>
-            <p>L'Application RIDN, incluant son design, son code source, ses logos, ses marques et tout autre élément, est la propriété exclusive de ONEVRA ou de ses concédants de licence.</p>
-            <p>Tous droits non expressément accordés dans les présentes CGU sont réservés.</p>
-
-            <h3>7.2 Droits des Utilisateurs</h3>
-            <p>Vous conservez tous vos droits sur le contenu que vous publiez sur RIDN.</p>
-            <p>Vous garantissez que vous détenez tous les droits nécessaires sur le contenu que vous publiez et que ce contenu ne viole aucun droit de tiers.</p>
-
-            <h3>7.3 Utilisation interdite</h3>
-            <p>Vous ne pouvez pas :</p>
-            <ul>
-                <li>Copier, modifier, distribuer ou créer des œuvres dérivées de l'Application</li>
-                <li>Décompiler, désassembler ou tenter d'extraire le code source de l'Application</li>
-                <li>Utiliser la marque "RIDN" ou nos logos sans autorisation écrite</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>8. Services premium et abonnements (versions futures)</h2>
-
-            <h3>8.1 Fonctionnalités premium</h3>
-            <p>RIDN propose (ou proposera) des fonctionnalités premium payantes, incluant :</p>
-            <ul>
-                <li><strong>RIDN Boost</strong> : swipes illimités, super likes, boosts de visibilité, sans publicité</li>
-                <li><strong>RIDN Premium</strong> : tous les avantages Boost + super likes illimités + voir qui vous a liké</li>
-            </ul>
-
-            <h3>8.2 Tarifs et paiements</h3>
-            <p>Les tarifs des abonnements sont affichés clairement dans l'Application avant tout achat.</p>
-            <p>Les paiements sont traités via :</p>
-            <ul>
-                <li>App Store (iOS) - selon les conditions d'Apple</li>
-                <li>Google Play Store (Android) - selon les conditions de Google</li>
-            </ul>
-
-            <h3>8.3 Renouvellement automatique</h3>
-            <p>Les abonnements se renouvellent automatiquement à la fin de chaque période, sauf si vous les annulez avant la date de renouvellement.</p>
-            <p>Vous pouvez annuler votre abonnement à tout moment via les paramètres de votre compte App Store ou Google Play.</p>
-
-            <h3>8.4 Droit de rétractation</h3>
-            <p>Conformément à la législation française, vous disposez d'un délai de 14 jours pour exercer votre droit de rétractation.</p>
-            <p>Toutefois, en activant immédiatement votre abonnement, vous reconnaissez renoncer expressément à ce droit de rétractation.</p>
-
-            <h3>8.5 Remboursements</h3>
-            <p>Aucun remboursement ne sera effectué pour :</p>
-            <ul>
-                <li>Les périodes d'abonnement non utilisées</li>
-                <li>Les comptes suspendus ou résiliés pour violation des CGU</li>
-            </ul>
-            <p>Les demandes de remboursement doivent être adressées à : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-        </section>
-
-        <section>
-            <h2>9. Résiliation</h2>
-
-            <h3>9.1 Par l'Utilisateur</h3>
-            <p>Vous pouvez supprimer votre compte à tout moment via les paramètres de l'Application.</p>
-            <p>La suppression de votre compte entraîne :</p>
-            <ul>
-                <li>La suppression de votre profil</li>
-                <li>La suppression de vos données personnelles (sous réserve des obligations légales)</li>
-                <li>La perte d'accès à tous vos matches et messages</li>
-            </ul>
-
-            <h3>9.2 Par RIDN</h3>
-            <p>Nous pouvons suspendre ou résilier votre compte immédiatement et sans préavis si :</p>
-            <ul>
-                <li>Vous violez les présentes CGU</li>
-                <li>Vous vous livrez à des activités frauduleuses ou illégales</li>
-                <li>Votre comportement met en danger la sécurité d'autres Utilisateurs</li>
-                <li>Vous avez été signalé de manière répétée par d'autres Utilisateurs</li>
-            </ul>
-
-            <p>En cas de résiliation pour violation des CGU :</p>
-            <ul>
-                <li>Vous perdez immédiatement l'accès à votre compte</li>
-                <li>Aucun remboursement ne sera effectué</li>
-                <li>Nous nous réservons le droit de prendre des mesures légales si nécessaire</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>10. Limitation de responsabilité</h2>
-
-            <h3>10.1 Disponibilité du service</h3>
-            <p>Nous nous efforçons de maintenir l'Application accessible 24h/24 et 7j/7. Toutefois :</p>
-            <ul>
-                <li>Nous ne garantissons pas une disponibilité ininterrompue</li>
-                <li>Nous pouvons suspendre temporairement l'accès pour maintenance</li>
-                <li>Nous ne sommes pas responsables des pannes techniques indépendantes de notre volonté</li>
-            </ul>
-
-            <h3>10.2 Contenu des Utilisateurs</h3>
-            <p>Nous ne sommes pas responsables :</p>
-            <ul>
-                <li>Du contenu publié par les Utilisateurs</li>
-                <li>Des interactions entre Utilisateurs</li>
-                <li>Des rencontres organisées via l'Application</li>
-                <li>De l'exactitude des informations fournies par les Utilisateurs</li>
-            </ul>
-
-            <h3>10.3 Sécurité personnelle</h3>
-            <div class="warning">
-                <p><strong>Important :</strong> RIDN est un service en ligne. Nous vous recommandons vivement de :</p>
-                <ul>
-                    <li>Faire preuve de prudence lors de rencontres en personne</li>
-                    <li>Rencontrer les personnes dans des lieux publics</li>
-                    <li>Informer un proche de vos rendez-vous</li>
-                    <li>Faire confiance à votre instinct</li>
-                </ul>
-                <p><strong>Vous êtes seul responsable de votre sécurité lors de rencontres organisées via RIDN.</strong></p>
-            </div>
-
-            <h3>10.4 Limitation de notre responsabilité</h3>
-            <p>Dans toute la mesure permise par la loi, RIDN ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris :</p>
-            <ul>
-                <li>Perte de profits ou de revenus</li>
-                <li>Perte de données</li>
-                <li>Perte de chance</li>
-                <li>Préjudice moral</li>
-            </ul>
-            <p>Notre responsabilité totale envers vous ne pourra en aucun cas excéder le montant des sommes que vous nous avez versées au cours des 12 derniers mois.</p>
-        </section>
-
-        <section>
-            <h2>11. Signalement et sécurité</h2>
-
-            <h3>11.1 Signaler un utilisateur</h3>
-            <p>Si vous rencontrez un comportement inapproprié, vous pouvez signaler un Utilisateur via l'Application.</p>
-            <p>Nous examinerons chaque signalement et prendrons les mesures appropriées.</p>
-
-            <h3>11.2 Blocage d'utilisateurs</h3>
-            <p>Vous pouvez bloquer tout Utilisateur à tout moment. Les Utilisateurs bloqués :</p>
-            <ul>
-                <li>Ne pourront plus voir votre profil</li>
-                <li>Ne pourront plus vous contacter</li>
-                <li>Ne sauront pas qu'ils ont été bloqués</li>
-            </ul>
-
-            <h3>11.3 Contact d'urgence</h3>
-            <div class="important">
-                <p><strong>En cas de danger immédiat, contactez immédiatement les autorités locales (police, gendarmerie).</strong></p>
-                <p>Pour tout problème de sécurité sur l'Application : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-            </div>
-
-            <h3>11.4 Protection des mineurs (Tolérance Zéro)</h3>
-            <div class="important">
-                <p><strong>Politique de Tolérance Zéro :</strong> RIDN applique une politique de tolérance zéro stricte concernant tout contenu représentant des abus sexuels sur mineurs (CSAM) ou l'exploitation d'enfants.</p>
-                <p>Tout manquement à cette règle entraînera :</p>
-                <ul>
-                    <li>La suppression <strong>immédiate</strong> et définitive du contenu.</li>
-                    <li>Le bannissement <strong>irrévocable</strong> du compte de l'utilisateur.</li>
-                    <li>Le signalement <strong>systématique</strong> des faits et de l'utilisateur aux autorités compétentes (Pharos / NCMEC).</li>
-                </ul>
-            </div>
-            </section>
-
-        <section>
-            <h2>12. Données personnelles</h2>
-            <p>Le traitement de vos données personnelles est régi par notre <a href="https://ridnapp.com/privacy">Politique de Confidentialité</a>.</p>
-            <p>En utilisant RIDN, vous consentez à la collecte et au traitement de vos données conformément à cette politique.</p>
-        </section>
-
-        <section>
-            <h2>13. Modifications des CGU</h2>
-            <p>Nous nous réservons le droit de modifier les présentes CGU à tout moment.</p>
-            <p>En cas de modification substantielle, nous vous en informerons via :</p>
-            <ul>
-                <li>Une notification dans l'Application</li>
-                <li>Un email à l'adresse associée à votre compte</li>
-            </ul>
-            <p>La poursuite de l'utilisation de l'Application après notification des modifications vaut acceptation des nouvelles CGU.</p>
-        </section>
-
-        <section>
-            <h2>14. Droit applicable et juridiction</h2>
-
-            <h3>14.1 Droit applicable</h3>
-            <p>Les présentes CGU sont régies par le droit français.</p>
-
-            <h3>14.2 Résolution des litiges</h3>
-            <p>En cas de litige, nous vous encourageons à nous contacter d'abord pour tenter de trouver une solution amiable : <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-
-            <h3>14.3 Médiation</h3>
-            <p>Conformément à l'article L.612-1 du Code de la consommation, vous avez le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d'un litige.</p>
-            <p>Plateforme de règlement en ligne des litiges de l'Union européenne : <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
-
-            <h3>14.4 Juridiction compétente</h3>
-            <p>À défaut de résolution amiable, tout litige relatif aux présentes CGU sera soumis aux tribunaux compétents français, conformément aux règles de compétence en vigueur.</p>
-        </section>
-
-        <section>
-            <h2>15. Dispositions générales</h2>
-
-            <h3>15.1 Intégralité de l'accord</h3>
-            <p>Les présentes CGU constituent l'intégralité de l'accord entre vous et RIDN concernant l'utilisation de l'Application.</p>
-
-            <h3>15.2 Divisibilité</h3>
-            <p>Si une disposition des présentes CGU est jugée invalide ou inapplicable, les autres dispositions resteront pleinement en vigueur.</p>
-
-            <h3>15.3 Absence de renonciation</h3>
-            <p>Le fait pour RIDN de ne pas exercer un droit prévu par les présentes CGU ne constitue pas une renonciation à ce droit.</p>
-
-            <h3>15.4 Cession</h3>
-            <p>Vous ne pouvez pas céder ou transférer vos droits et obligations en vertu des présentes CGU sans notre consentement écrit préalable.</p>
-            <p>Nous pouvons céder ou transférer nos droits et obligations à tout moment.</p>
-        </section>
-
-        <section>
-            <h2>16. Contact</h2>
-            <p>Pour toute question concernant ces Conditions Générales d'Utilisation, contactez-nous :</p>
-            
-            <div class="contact-box">
-                <p><strong>Email :</strong> <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-                <p><strong>Adresse postale :</strong><br>
-                ONEVRA<br>
-                Tom Revert<br>
-                95300 Pontoise<br>
-                France</p>
-                <p><strong>Site web :</strong> <a href="https://ridnapp.com">https://ridnapp.com</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>17. Mentions légales</h2>
-            
-            <p><strong>Éditeur de l'application :</strong><br>
-            ONEVRA<br>
-            Entrepreneur individuel<br>
-            Représenté par Tom Revert<br>
-            95300 Pontoise, France</p>
-
-            <p><strong>Directeur de publication :</strong> Tom Revert</p>
-
-            <p><strong>Contact :</strong> <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
-
-            <p><strong>Hébergement de l'application :</strong><br>
-            Firebase (Google LLC)<br>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA 94043<br>
-            États-Unis<br>
-            <a href="https://firebase.google.com" target="_blank">https://firebase.google.com</a></p>
-
-            <p><strong>Hébergement du site web :</strong><br>
-            GitHub Pages<br>
-            <a href="https://pages.github.com" target="_blank">https://pages.github.com</a></p>
-        </section>
-
-        <footer>
-            <p><strong>Merci d'utiliser RIDN et de faire partie de notre communauté de passionnés de moto ! 🏍️</strong></p>
-            <p>Ces Conditions Générales d'Utilisation ont été rédigées conformément au droit français, notamment :</p>
-            <ul style="list-style: none; padding: 0;">
-                <li>Code civil</li>
-                <li>Code de la consommation</li>
-                <li>Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN)</li>
-                <li>Règlement Général sur la Protection des Données (RGPD - UE 2016/679)</li>
-            </ul>
-            <p style="margin-top: 20px;">© 2025 ONEVRA - Tous droits réservés</p>
-        </footer>
+  <!-- ARTICLE 1 -->
+  <div class="section" id="s1">
+    <p class="section-number">Article 01</p>
+    <h2>Éditeur</h2>
+    <p>L'application RIDN est éditée par :</p>
+    <div class="identity-card">
+      <table>
+        <tr><td>Exploitant</td><td>Tom Revert – Entrepreneur Individuel (EI), exerçant sous le nom commercial ONEVRA</td></tr>
+        <tr><td>Siège social</td><td>61 rue de Lyon, 75012 Paris, France</td></tr>
+        <tr><td>SIRET</td><td>993 914 969 00015 (en cours de mise à jour)</td></tr>
+        <tr><td>Statut fiscal</td><td>TVA non applicable — art. 293 B du CGI</td></tr>
+        <tr><td>Email</td><td><a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></td></tr>
+        <tr><td>Téléphone</td><td>07 69 08 16 14</td></tr>
+        <tr><td>Site web</td><td><a href="https://ridnapp.com">ridnapp.com</a></td></tr>
+        <tr><td>Hébergement</td><td>Google Firebase (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA)</td></tr>
+      </table>
     </div>
+  </div>
+
+  <!-- ARTICLE 2 -->
+  <div class="section" id="s2">
+    <p class="section-number">Article 02</p>
+    <h2>Objet et champ d'application</h2>
+    <p>RIDN est une application mobile de rencontres et de mise en relation entre passionnés de moto, disponible sur iOS et Android. Elle permet aux utilisateurs de créer un profil, de découvrir d'autres riders à proximité, d'échanger des messages et, le cas échéant, de souscrire à des fonctionnalités premium.</p>
+    <p>Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation de l'application RIDN et de ses services associés. Toute utilisation de l'application vaut acceptation sans réserve des présentes CGU.</p>
+    <p>RIDN est destinée exclusivement aux personnes physiques majeures (18 ans et plus). L'accès est strictement interdit aux mineurs.</p>
+  </div>
+
+  <!-- ARTICLE 3 -->
+  <div class="section" id="s3">
+    <p class="section-number">Article 03</p>
+    <h2>Accès au service</h2>
+    <p>L'accès à RIDN requiert un appareil mobile compatible, une connexion internet et la création d'un compte. L'application est disponible gratuitement en téléchargement sur l'App Store d'Apple et le Google Play Store.</p>
+    <p>L'éditeur se réserve le droit de modifier, suspendre ou interrompre tout ou partie du service à tout moment, notamment pour des raisons de maintenance, de sécurité ou d'évolution technique. Dans la mesure du possible, les interruptions planifiées font l'objet d'une information préalable aux utilisateurs.</p>
+    <p>Les transactions financières liées aux achats in-app sont effectuées par Apple Distribution International Ltd (App Store) ou Google LLC (Google Play), agissant en tant que commerçants officiels. RIDN est concédée sous licence par l'éditeur. En cas de litige relatif à un paiement, l'utilisateur doit contacter directement la plateforme de distribution concernée.</p>
+  </div>
+
+  <!-- ARTICLE 4 -->
+  <div class="section" id="s4">
+    <p class="section-number">Article 04</p>
+    <h2>Inscription et compte</h2>
+    <h3>Création du compte</h3>
+    <p>L'inscription nécessite la fourniture d'informations exactes, complètes et à jour. L'utilisateur s'engage à maintenir ces informations exactes pendant toute la durée d'utilisation du service.</p>
+    <p>Chaque utilisateur ne peut créer qu'un seul compte. La création de comptes multiples est interdite.</p>
+    <h3>Sécurité</h3>
+    <p>L'utilisateur est seul responsable de la confidentialité de ses identifiants de connexion. Il doit informer immédiatement l'éditeur de toute utilisation non autorisée de son compte à l'adresse <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+    <h3>Suppression du compte</h3>
+    <p>L'utilisateur peut supprimer son compte à tout moment depuis les paramètres de l'application. La suppression entraîne l'effacement des données de profil conformément à la politique de confidentialité, sous réserve des obligations légales de conservation.</p>
+  </div>
+
+  <!-- ARTICLE 5 -->
+  <div class="section" id="s5">
+    <p class="section-number">Article 05</p>
+    <h2>Contenu utilisateur</h2>
+    <h3>Responsabilité</h3>
+    <p>L'utilisateur est seul responsable des contenus qu'il publie sur RIDN (photos, textes, messages). Il garantit disposer de tous les droits nécessaires sur ces contenus et qu'ils ne violent aucun droit de tiers.</p>
+    <h3>Licence</h3>
+    <p>En publiant un contenu sur RIDN, l'utilisateur accorde à l'éditeur une licence mondiale, non exclusive, gratuite et limitée à la durée d'utilisation du service, aux fins exclusives d'exploitation du service RIDN. Cette licence ne couvre ni l'usage commercial, ni l'usage publicitaire, ni l'entraînement de modèles d'intelligence artificielle.</p>
+    <h3>Contenus interdits</h3>
+    <p>Sont strictement interdits les contenus :</p>
+    <ul>
+      <li>impliquant des mineurs de quelque façon que ce soit ;</li>
+      <li>à caractère sexuel explicite non consenti par les personnes représentées ;</li>
+      <li>incitant à la haine, à la discrimination ou à la violence ;</li>
+      <li>portant atteinte à la vie privée ou à l'image de tiers ;</li>
+      <li>constituant une usurpation d'identité ;</li>
+      <li>à caractère commercial non autorisé, promotionnel ou publicitaire ;</li>
+      <li>contraires à l'ordre public ou aux bonnes mœurs.</li>
+    </ul>
+  </div>
+
+  <!-- ARTICLE 6 -->
+  <div class="section" id="s6">
+    <p class="section-number">Article 06</p>
+    <h2>Offres premium et paiements</h2>
+    <h3>Description des offres</h3>
+    <p>RIDN propose des fonctionnalités avancées accessibles via un abonnement premium et des options ponctuelles (boosts), gérés par le service RevenueCat. Les tarifs en vigueur sont affichés dans l'application au moment de l'achat.</p>
+    <h3>Modalités de paiement</h3>
+    <p>Les paiements sont traités par Apple (App Store) ou Google (Google Play) selon la plateforme utilisée. Les conditions de facturation, de renouvellement et de remboursement de ces plateformes s'appliquent et priment sur les présentes CGU pour toute question relative aux transactions.</p>
+    <h3>Droit de rétractation</h3>
+    <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux contenus numériques fournis sur un support immatériel dont l'exécution a commencé avec l'accord préalable exprès du consommateur, qui a reconnu perdre son droit de rétractation. En souscrivant un abonnement premium et en demandant l'exécution immédiate du service, l'utilisateur reconnaît expressément renoncer à son droit de rétractation. Les remboursements éventuels sont gérés directement par Apple ou Google.</p>
+    <h3>Résiliation de l'abonnement</h3>
+    <p>L'abonnement premium se renouvelle automatiquement. L'utilisateur peut résilier à tout moment depuis les paramètres de son compte App Store ou Google Play. La résiliation prend effet à la fin de la période en cours.</p>
+  </div>
+
+  <!-- ARTICLE 7 -->
+  <div class="section" id="s7">
+    <p class="section-number">Article 07</p>
+    <h2>Comportements prohibés</h2>
+    <p>L'utilisateur s'engage à ne pas :</p>
+    <ul>
+      <li>harceler, menacer ou intimider d'autres utilisateurs ;</li>
+      <li>collecter des données personnelles d'autres utilisateurs sans leur consentement ;</li>
+      <li>tenter d'accéder de manière non autorisée aux systèmes de RIDN ;</li>
+      <li>utiliser des scripts automatisés, bots ou tout autre moyen pour interagir artificiellement avec le service ;</li>
+      <li>usurper l'identité d'une autre personne ou d'un membre de l'équipe RIDN ;</li>
+      <li>diffuser des logiciels malveillants ou tout contenu susceptible de nuire au service ;</li>
+      <li>utiliser le service à des fins commerciales sans autorisation préalable écrite de l'éditeur.</li>
+    </ul>
+    <div class="highlight">
+      <p>Tout manquement grave à ces règles peut entraîner la suspension ou la résiliation du compte, avec notification motivée adressée à l'utilisateur.</p>
+    </div>
+  </div>
+
+  <!-- ARTICLE 8 -->
+  <div class="section" id="s8">
+    <p class="section-number">Article 08</p>
+    <h2>Suspension et résiliation</h2>
+    <h3>Résiliation par l'utilisateur</h3>
+    <p>L'utilisateur peut mettre fin à son utilisation de RIDN à tout moment en supprimant son compte depuis les paramètres de l'application.</p>
+    <h3>Mesures prises par l'éditeur</h3>
+    <p>En cas de violation des présentes CGU ou d'atteinte aux droits de tiers, l'éditeur peut prendre les mesures suivantes :</p>
+    <ul>
+      <li>avertissement notifié à l'utilisateur ;</li>
+      <li>suppression du contenu concerné, avec notification motivée ;</li>
+      <li>suspension temporaire du compte, avec notification motivée ;</li>
+      <li>résiliation définitive du compte, avec notification motivée.</li>
+    </ul>
+    <p>Conformément à l'article 17 du Règlement (UE) 2022/2065 (DSA), toute décision de restriction est notifiée à l'utilisateur avec les motifs précis, les faits constatés et les voies de recours disponibles. L'utilisateur dispose d'un délai de 15 jours pour contester la décision par email à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+    <h3>Remboursement en cas de résiliation</h3>
+    <p>En cas de résiliation du compte pour faute grave avérée et caractérisée (notamment diffusion de contenus illicites ou harcèlement), aucun remboursement de l'abonnement en cours ne sera effectué. Dans les autres cas de résiliation à l'initiative de l'éditeur, l'utilisateur pourra prétendre au remboursement prorata temporis de la période non consommée, auprès de la plateforme de paiement concernée.</p>
+  </div>
+
+  <!-- ARTICLE 9 -->
+  <div class="section" id="s9">
+    <p class="section-number">Article 09</p>
+    <h2>Signalement et modération</h2>
+    <p>Conformément à l'article 16 du Règlement (UE) 2022/2065 (DSA), tout utilisateur peut signaler un contenu illicite ou un comportement contraire aux présentes CGU directement depuis l'application, via le bouton de signalement présent sur chaque profil et chaque message.</p>
+    <p>L'éditeur accuse réception de chaque signalement et notifie à l'utilisateur signalant la décision prise ainsi que les motifs, dans un délai raisonnable.</p>
+    <p>Les signalements peuvent également être adressés par email à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+    <p>En cas de soupçon d'infraction pénale constituant une menace pour la vie ou la sécurité de personnes, l'éditeur en informe les autorités compétentes conformément à l'article 18 du DSA.</p>
+  </div>
+
+  <!-- ARTICLE 10 -->
+  <div class="section" id="s10">
+    <p class="section-number">Article 10</p>
+    <h2>Responsabilité</h2>
+    <h3>Limitation de responsabilité</h3>
+    <p>RIDN est une plateforme de mise en relation. L'éditeur n'est pas partie aux relations entre utilisateurs et ne saurait être tenu responsable des comportements, contenus ou dommages causés par les utilisateurs entre eux.</p>
+    <p>La responsabilité de l'éditeur ne peut être engagée en cas d'interruption du service pour maintenance, de force majeure, de défaillance du réseau ou de tout événement indépendant de sa volonté.</p>
+    <p>Dans les limites autorisées par la loi, la responsabilité de l'éditeur au titre de l'utilisation de RIDN est plafonnée aux sommes versées par l'utilisateur au cours des 12 mois précédant le fait générateur. Ce plafond ne s'applique pas en cas de dommage corporel, de faute lourde ou de dol.</p>
+    <h3>Garantie</h3>
+    <p>L'éditeur garantit la conformité du service aux stipulations des présentes CGU. Toute réclamation doit être adressée à <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+  </div>
+
+  <!-- ARTICLE 11 -->
+  <div class="section" id="s11">
+    <p class="section-number">Article 11</p>
+    <h2>Propriété intellectuelle</h2>
+    <p>L'application RIDN, son logo, sa charte graphique, ses fonctionnalités et l'ensemble de ses contenus (à l'exception des contenus publiés par les utilisateurs) sont la propriété exclusive de l'éditeur ou de ses concédants de licence.</p>
+    <p>Toute reproduction, représentation, modification ou exploitation non autorisée est interdite et susceptible de constituer une contrefaçon.</p>
+    <p>L'utilisation de RIDN ne confère à l'utilisateur aucun droit de propriété intellectuelle sur le service ou ses composants.</p>
+  </div>
+
+  <!-- ARTICLE 12 -->
+  <div class="section" id="s12">
+    <p class="section-number">Article 12</p>
+    <h2>Données personnelles</h2>
+    <p>Le traitement des données personnelles des utilisateurs est régi par la <a href="https://ridnapp.com/privacy-policy.html">Politique de Confidentialité</a> de RIDN, disponible sur le site et dans l'application.</p>
+    <p>Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés, l'utilisateur dispose de droits d'accès, de rectification, d'effacement, de portabilité et d'opposition sur ses données, exercés à l'adresse <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a>.</p>
+  </div>
+
+  <!-- ARTICLE 13 -->
+  <div class="section" id="s13">
+    <p class="section-number">Article 13</p>
+    <h2>Médiation et litiges</h2>
+    <p>En cas de litige relatif à l'utilisation de RIDN, l'utilisateur est invité à contacter l'éditeur en premier lieu à l'adresse <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a> afin de rechercher une solution amiable.</p>
+    <p>À défaut de résolution amiable dans un délai de 30 jours, l'utilisateur consommateur peut recourir gratuitement au service de médiation de la consommation :</p>
+    <div class="identity-card">
+      <table>
+        <tr><td>Médiateur</td><td>CM2C – Centre de Médiation et d'Arbitrage de Paris</td></tr>
+        <tr><td>Site</td><td><a href="https://www.cm2c.net" target="_blank">www.cm2c.net</a></td></tr>
+        <tr><td>Saisine</td><td>Via le formulaire en ligne sur le site du médiateur</td></tr>
+        <tr><td>Secteur</td><td>Q02 – Agences matrimoniales, clubs de rencontres</td></tr>
+      </table>
+    </div>
+    <p>Ce recours est gratuit pour le consommateur. Il ne fait pas obstacle à la saisine des juridictions compétentes.</p>
+  </div>
+
+  <!-- ARTICLE 14 -->
+  <div class="section" id="s14">
+    <p class="section-number">Article 14</p>
+    <h2>Modifications des CGU</h2>
+    <p>L'éditeur se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs sont informés de toute modification substantielle par notification dans l'application ou par email, avec un préavis minimum de 15 jours avant l'entrée en vigueur des nouvelles conditions.</p>
+    <p>La poursuite de l'utilisation de RIDN après ce délai vaut acceptation des nouvelles CGU. À défaut d'acceptation, l'utilisateur peut supprimer son compte.</p>
+  </div>
+
+  <!-- ARTICLE 15 -->
+  <div class="section" id="s15">
+    <p class="section-number">Article 15</p>
+    <h2>Droit applicable</h2>
+    <p>Les présentes CGU sont soumises au droit français. En cas de litige, et à défaut de résolution amiable ou par voie de médiation, les tribunaux compétents sont ceux du ressort du domicile du défendeur ou, au choix du consommateur, du lieu d'exécution de la prestation.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>RIDN · Tom Revert EI · 61 rue de Lyon, 75012 Paris</p>
+  <p><a href="https://ridnapp.com/privacy-policy.html">Politique de confidentialité</a> · <a href="mailto:admin@ridnapp.com">admin@ridnapp.com</a></p>
+  <p style="margin-top:16px;">© 2026 ONEVRA — Tous droits réservés</p>
+</footer>
+
 </body>
 </html>
